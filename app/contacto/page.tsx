@@ -49,7 +49,7 @@ export default function ContactoPage() {
                   <div className="relative w-20 h-20 overflow-hidden bg-soft shrink-0">
                     <Image
                       src="/images/manuel.jpg"
-                      alt="Manuel Díaz"
+                      alt="Manuel Flores"
                       fill
                       sizes="80px"
                       className="object-cover grayscale"
@@ -57,7 +57,7 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <p className="eyebrow mb-1">Te responde directamente</p>
-                    <p className="font-display text-xl">Manuel Díaz</p>
+                    <p className="font-display text-xl">Manuel Flores</p>
                     <p className="text-sm text-mute">Fundador</p>
                   </div>
                 </div>

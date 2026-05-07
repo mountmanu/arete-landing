@@ -16,7 +16,7 @@ export function Founder() {
                 className="text-balance"
                 style={{ fontSize: "var(--text-display-lg)" }}
               >
-                Manuel Díaz.
+                Manuel Flores.
               </h2>
             </Reveal>
 
@@ -68,7 +68,7 @@ export function Founder() {
                 <div className="relative aspect-[3/4] w-full max-w-[520px] mx-auto overflow-hidden bg-paper">
                   <Image
                     src="/images/manuel.jpg"
-                    alt="Manuel Díaz, fundador de Areté Soluciones"
+                    alt="Manuel Flores, fundador de Areté Soluciones"
                     fill
                     sizes="(max-width: 1024px) 90vw, 520px"
                     className="object-cover grayscale"
@@ -76,7 +76,7 @@ export function Founder() {
                   />
                 </div>
                 <figcaption className="mt-5 text-center text-[var(--text-caption)] text-mute tracking-[0.04em] uppercase">
-                  Manuel Díaz · Fundador
+                  Manuel Flores · Fundador
                 </figcaption>
               </figure>
             </Reveal>

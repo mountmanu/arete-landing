@@ -7,7 +7,7 @@ import { Engagement } from "@/components/Engagement";
 export const metadata: Metadata = {
   title: "Cómo trabajo",
   description:
-    "Soy Manuel Díaz, fundador de Areté Soluciones. Construyo software AI-nativo para PyMEs mexicanas — un núcleo reusable y packs por industria.",
+    "Soy Manuel Flores, fundador de Areté Soluciones. Construyo software AI-nativo para PyMEs mexicanas — un núcleo reusable y packs por industria.",
 };
 
 const methodology = [
@@ -65,14 +65,14 @@ export default function NosotrosPage() {
                   <div className="relative aspect-[3/4] w-full overflow-hidden bg-soft">
                     <Image
                       src="/images/manuel.jpg"
-                      alt="Manuel Díaz, fundador de Areté Soluciones"
+                      alt="Manuel Flores, fundador de Areté Soluciones"
                       fill
                       sizes="(max-width: 1024px) 90vw, 480px"
                       className="object-cover grayscale"
                     />
                   </div>
                   <figcaption className="mt-5 text-[var(--text-caption)] text-mute tracking-[0.04em] uppercase">
-                    Manuel Díaz · Fundador de Areté Soluciones
+                    Manuel Flores · Fundador de Areté Soluciones
                   </figcaption>
                 </figure>
               </Reveal>
@@ -180,7 +180,7 @@ export default function NosotrosPage() {
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-10 text-[var(--text-caption)] tracking-[0.04em] uppercase text-mute">
-              — Manuel Díaz, fundador
+              — Manuel Flores, fundador
             </p>
           </Reveal>
         </div>
