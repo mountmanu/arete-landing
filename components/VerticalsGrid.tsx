@@ -16,7 +16,7 @@ export function VerticalsGrid() {
                 className="text-balance"
                 style={{ fontSize: "var(--text-display-lg)" }}
               >
-                Cinco industrias, un mismo método.
+                Seis industrias, un mismo método.
               </h2>
             </Reveal>
           </div>
@@ -64,14 +64,35 @@ export function VerticalsGrid() {
               </Link>
             </Reveal>
           ))}
-          <div className="hidden lg:flex bg-paper p-10 items-center justify-center">
-            <div className="text-center max-w-[200px]">
+          <Link
+            href="/black"
+            className="group hidden lg:flex bg-paper p-10 items-center justify-center border-l border-line hover:bg-soft transition-colors"
+          >
+            <div className="text-center max-w-[220px]">
               <div className="text-mute font-display text-xl mb-3">06</div>
-              <p className="text-sm text-mute leading-relaxed">
-                ¿Tu industria no está aquí? Cada nueva la convertimos en pack.
+              <h3
+                className="font-display"
+                style={{ fontSize: "var(--text-display-md)" }}
+              >
+                Joyería y Relojería
+              </h3>
+              <p className="mt-3 text-sm text-mute leading-relaxed">
+                Suite de Cumplimiento PLD para casas de lujo.
               </p>
+              <div className="mt-6 inline-flex items-center gap-2 text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium text-ink opacity-60 group-hover:opacity-100 group-hover:gap-3 transition-all duration-300">
+                Areté Black
+                <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M1 7H13M13 7L7 1M13 7L7 13"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

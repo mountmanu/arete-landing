@@ -12,6 +12,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/verticales`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/casos`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/contacto`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/black`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/black/cumplimiento`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/black/boveda`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE_URL}/black/casos`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/black/contacto`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
   ];
 
   const caseRoutes: MetadataRoute.Sitemap = caseStudies.map((c) => ({

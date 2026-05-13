@@ -11,6 +11,14 @@
   --color-line: #E5E5E5;
   --color-line-soft: #EFEFEF;
 
+  /* Areté Black — luxury palette tokens (always available) */
+  --color-onyx: #0A0908;
+  --color-onyx-soft: #141210;
+  --color-bone: #F5F1E8;
+  --color-bone-mute: #8A8378;
+  --color-gold: #C9A961;
+  --color-gold-deep: #8E7541;
+
   --font-display: var(--font-display-stack), ui-serif, Georgia, serif;
   --font-body: var(--font-body-stack), ui-sans-serif, system-ui, sans-serif;
 
@@ -40,6 +48,26 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  }
+
+  /* Areté Black — invert the canonical tokens for everything under /black */
+  [data-theme="black"] {
+    --color-ink: #F5F1E8;
+    --color-ink-soft: #E8E0CC;
+    --color-paper: #0A0908;
+    --color-paper-pure: #050504;
+    --color-soft: #141210;
+    --color-mute: #8A8378;
+    --color-hush: #5C5651;
+    --color-line: #1F1C18;
+    --color-line-soft: #14110E;
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  [data-theme="black"] ::selection {
+    background: var(--color-gold);
+    color: var(--color-paper);
   }
 
   body {
@@ -183,6 +211,50 @@
   }
 }
 
+@layer components {
+  /* Areté Black — accent treatments */
+  .text-gold {
+    color: var(--color-gold);
+  }
+
+  .border-gold {
+    border-color: var(--color-gold);
+  }
+
+  .rule-gold {
+    border-top: 1px solid var(--color-gold);
+  }
+
+  .accent-rule {
+    display: inline-block;
+    width: 2.5rem;
+    height: 1px;
+    background: var(--color-gold);
+  }
+
+  [data-theme="black"] .btn-primary {
+    background: var(--color-gold);
+    color: var(--color-paper);
+    border-color: var(--color-gold);
+  }
+
+  [data-theme="black"] .btn-primary:hover {
+    background: transparent;
+    color: var(--color-gold);
+  }
+
+  [data-theme="black"] .btn-secondary {
+    color: var(--color-ink);
+    border-color: var(--color-line);
+  }
+
+  [data-theme="black"] .btn-secondary:hover {
+    background: var(--color-soft);
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -190,5 +262,73 @@
 
   .text-pretty {
     text-wrap: pretty;
+  }
+}
+
+/* ============================================================
+   Areté Black — Tema luxury para /black/*
+   Override de tokens scoped a [data-theme="black"]. Aplicado al
+   <html> por ThemeApplier client component según pathname.
+   Toda la UI existente (btn-primary, btn-secondary, eyebrow,
+   rule-top, link-underline, Nav, Footer) hereda automáticamente
+   los colores invertidos vía CSS variables.
+   ============================================================ */
+
+@layer base {
+  [data-theme="black"] {
+    --color-ink: #F5F0E6;
+    --color-ink-soft: #C9C4BA;
+    --color-paper: #0A0A0A;
+    --color-paper-pure: #000000;
+    --color-soft: #141414;
+    --color-mute: #8A8580;
+    --color-hush: #585450;
+    --color-line: #1F1D1A;
+    --color-line-soft: #161412;
+    --color-accent: #C9A961;
+  }
+
+  [data-theme="black"] body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  [data-theme="black"] ::selection {
+    background: var(--color-accent);
+    color: var(--color-paper);
+  }
+
+  [data-theme="black"] hr {
+    border-top-color: var(--color-line);
+  }
+}
+
+@layer components {
+  [data-theme="black"] .btn-primary {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    border-color: var(--color-ink);
+  }
+
+  [data-theme="black"] .btn-primary:hover {
+    background: var(--color-accent);
+    color: var(--color-paper);
+    border-color: var(--color-accent);
+  }
+
+  [data-theme="black"] .btn-secondary {
+    color: var(--color-ink);
+    border-color: var(--color-line);
+    background: transparent;
+  }
+
+  [data-theme="black"] .btn-secondary:hover {
+    background: var(--color-soft);
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  [data-theme="black"] .accent-line {
+    background: var(--color-accent);
   }
 }

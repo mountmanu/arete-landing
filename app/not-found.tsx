@@ -11,7 +11,7 @@ export default function NotFound() {
         >
           Esta página no existe — todavía.
         </h1>
-        <p className="mt-8 text-[var(--text-body-lg)] text-[var(--color-stone)] max-w-xl mx-auto leading-relaxed">
+        <p className="mt-8 text-[var(--text-body-lg)] text-mute max-w-xl mx-auto leading-relaxed">
           Quizá la moviste de lugar, o quizá aún no la construimos. Si era
           importante, escríbenos.
         </p>
