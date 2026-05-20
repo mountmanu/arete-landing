@@ -24,7 +24,7 @@ export function Architecture() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-4">
             <Reveal>
-              <p className="eyebrow mb-6">Cómo está construido</p>
+              <p className="eyebrow mb-6">Por qué cada nuevo cliente paga menos</p>
             </Reveal>
             <Reveal delay={0.05}>
               <h2
@@ -36,9 +36,10 @@ export function Architecture() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-8 text-[var(--text-body-lg)] leading-relaxed text-ink">
-                Una capa horizontal que reuso en cada deploy. Sobre ella,
-                paquetes que codifican el dominio de cada industria. Tú
-                recibes lo último de ambos.
+                Auth, facturación CFDI, RAG, agentes autónomos — construidos
+                una vez, maduros en producción. Sobre esa base, cada vertical
+                agrega su dominio: reglas, lenguaje, protocolos. Tú recibes
+                los dos sin pagar por construir ninguno desde cero.
               </p>
             </Reveal>
           </div>

@@ -9,14 +9,14 @@ export function VerticalsGrid() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div className="max-w-2xl">
             <Reveal>
-              <p className="eyebrow mb-6">Industrias que entiendo</p>
+              <p className="eyebrow mb-6">Dónde el método ya probó</p>
             </Reveal>
             <Reveal delay={0.05}>
               <h2
                 className="text-balance"
                 style={{ fontSize: "var(--text-display-lg)" }}
               >
-                Seis industrias, un mismo método.
+                El mismo núcleo. Sectores distintos.
               </h2>
             </Reveal>
           </div>

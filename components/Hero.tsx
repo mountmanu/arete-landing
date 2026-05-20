@@ -8,7 +8,7 @@ export function Hero() {
         <Reveal>
           <div className="flex items-center gap-3 mb-10">
             <span className="block w-12 h-px bg-ink" />
-            <span className="eyebrow">Software AI a la medida</span>
+            <span className="eyebrow">Software AI-nativo para negocios mexicanos</span>
           </div>
         </Reveal>
 
@@ -23,17 +23,17 @@ export function Hero() {
             Sistemas que operan tu negocio.
             <br />
             <em className="not-italic font-display italic text-mute">
-              Listos en semanas, no en años.
+              Construido sobre lo que ya funciona.
             </em>
           </h1>
         </Reveal>
 
         <Reveal delay={0.2}>
           <p className="mt-10 max-w-2xl text-[var(--text-body-lg)] text-pretty text-ink leading-relaxed">
-            Construyo software AI-nativo para PyMEs mexicanas. Mis clientes
-            reciben sistemas con la madurez de una cadena grande desde el
-            primer día — porque cada proyecto se construye sobre la base de
-            los anteriores, no desde cero.
+            Construyo software AI-nativo para negocios mexicanos. Cada cliente
+            nuevo recibe el trabajo acumulado de todos los anteriores — sin
+            pagar por lo que ya construí, sin esperar a que aprenda su
+            industria. Siete sistemas en producción. Un solo núcleo debajo.
           </p>
         </Reveal>
 
@@ -60,7 +60,7 @@ export function Hero() {
         <Reveal delay={0.5}>
           <div className="mt-24 md:mt-32 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pt-10 rule-top">
             <Stat label="Sistemas en producción" value="7" />
-            <Stat label="Industrias atendidas" value="5" />
+            <Stat label="Verticales en producción" value="5" />
             <Stat label="Tiempo a producción" value="4–12 sem" />
             <Stat label="Sede" value="México" />
           </div>
