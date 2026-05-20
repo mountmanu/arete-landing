@@ -30,7 +30,7 @@ export function FounderBridge() {
               <Reveal delay={0.1}>
                 <p>
                   Areté Black opera bajo Areté Soluciones S.A. de C.V.,
-                  empresa mexicana con siete sistemas en producción y cinco
+                  empresa mexicana con seis sistemas en producción y cinco
                   industrias atendidas: notarías, hospitales, restaurantes,
                   comunidades y servicios profesionales.
                 </p>
@@ -65,7 +65,7 @@ export function FounderBridge() {
                   href="/casos"
                   className="link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium text-ink/70"
                 >
-                  Ver los siete casos en producción →
+                  Ver los seis casos en producción →
                 </Link>
               </div>
             </Reveal>

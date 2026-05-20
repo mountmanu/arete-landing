@@ -6,7 +6,7 @@ import { ContactCTABlack } from "@/components/black/ContactCTABlack";
 export const metadata: Metadata = {
   title: "Casos",
   description:
-    "Areté Black inaugura su pack con cuentas ancla en 2026–2027. Mientras tanto, conozca los siete casos en producción del grupo Areté Soluciones.",
+    "Areté Black inaugura su pack con cuentas ancla en 2026–2027. Mientras tanto, conozca los seis casos en producción del grupo Areté Soluciones.",
 };
 
 export default function CasosBlackPage() {
@@ -30,7 +30,7 @@ export default function CasosBlackPage() {
               Areté Black inaugura su pack con cuentas ancla en 2026–2027. La
               tecnología, sin embargo, no es nueva: opera ya en cinco
               industrias hermanas dentro del grupo Areté Soluciones, con
-              siete sistemas en producción.
+              seis sistemas en producción.
             </p>
           </Reveal>
         </div>
@@ -77,7 +77,7 @@ export default function CasosBlackPage() {
                     href="/casos"
                     className="btn-primary"
                   >
-                    Ver los siete casos del grupo
+                    Ver los seis casos del grupo
                   </Link>
                   <Link
                     href="/black/contacto"

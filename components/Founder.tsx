@@ -32,7 +32,7 @@ export function Founder() {
               <Reveal delay={0.15}>
                 <p>
                   Cuando me contratas no empiezas de cero. Recibes el
-                  resultado de siete sistemas en producción, ajustado a cómo
+                  resultado de seis sistemas en producción, ajustado a cómo
                   tu equipo ya trabaja. Eso es lo que significa{" "}
                   <em>componer</em> en lugar de revender.
                 </p>

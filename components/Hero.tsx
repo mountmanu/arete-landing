@@ -33,7 +33,7 @@ export function Hero() {
             Construyo software AI-nativo para negocios mexicanos. Cada cliente
             nuevo recibe el trabajo acumulado de todos los anteriores — sin
             pagar por lo que ya construí, sin esperar a que aprenda su
-            industria. Siete sistemas en producción. Un solo núcleo debajo.
+            industria. Seis sistemas en producción. Un solo núcleo debajo.
           </p>
         </Reveal>
 
@@ -59,7 +59,7 @@ export function Hero() {
 
         <Reveal delay={0.5}>
           <div className="mt-24 md:mt-32 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pt-10 rule-top">
-            <Stat label="Sistemas en producción" value="7" />
+            <Stat label="Sistemas en producción" value="6" />
             <Stat label="Verticales en producción" value="5" />
             <Stat label="Tiempo a producción" value="4–12 sem" />
             <Stat label="Sede" value="México" />

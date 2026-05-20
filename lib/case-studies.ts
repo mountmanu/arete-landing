@@ -185,7 +185,7 @@ export const caseStudies: CaseStudy[] = [
       { metric: "Tiempo real", detail: "pipeline conectado a delivery" },
     ],
     stack: ["Next.js", "Postgres", "Agentes", "Calendario", "Email"],
-    order: 6,
+    order: 5,
   },
   {
     slug: "laura-zanuna",
@@ -216,7 +216,7 @@ export const caseStudies: CaseStudy[] = [
       { metric: "1 persona", detail: "operando como una firma pequeña" },
     ],
     stack: ["Next.js", "Asistente IA", "Calendar", "Email", "Editorial"],
-    order: 7,
+    order: 6,
   },
 ];
 

@@ -6,7 +6,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Casos",
   description:
-    "Siete casos en producción a través de cinco verticales — notarial, hospital, restaurantes, comunidades y servicios profesionales.",
+    "Seis casos en producción a través de cinco verticales — notarial, hospital, restaurantes, comunidades y servicios profesionales.",
 };
 
 export default function CasosPage() {
@@ -22,7 +22,7 @@ export default function CasosPage() {
               className="text-balance max-w-4xl"
               style={{ fontSize: "var(--text-display-2xl)" }}
             >
-              Siete casos. Un mismo núcleo creciendo.
+              Seis casos. Un mismo núcleo creciendo.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
