@@ -49,7 +49,7 @@ export function ContactForm() {
     if (typeof window !== "undefined") {
       const subject = `Nueva conversación · ${data.company}`;
       const body = `Nombre: ${data.name}\nEmpresa: ${data.company}\nIndustria: ${data.vertical}\nCorreo: ${data.email}\n\n${data.message}`;
-      window.location.href = `mailto:hola@arete.mx?subject=${encodeURIComponent(
+      window.location.href = `mailto:manuel@arete.business?subject=${encodeURIComponent(
         subject,
       )}&body=${encodeURIComponent(body)}`;
     }
@@ -70,10 +70,10 @@ export function ContactForm() {
         <p className="mt-6 text-mute max-w-md mx-auto leading-relaxed">
           Si no se abrió, escríbeme directo a{" "}
           <a
-            href="mailto:hola@arete.mx"
+            href="mailto:manuel@arete.business"
             className="link-underline text-ink font-medium"
           >
-            hola@arete.mx
+            manuel@arete.business
           </a>
           .
         </p>

@@ -24,7 +24,7 @@ export function OrganizationJsonLd() {
     contactPoint: [
       {
         "@type": "ContactPoint",
-        email: "hola@arete.mx",
+        email: "manuel@arete.business",
         contactType: "Sales",
         availableLanguage: ["Spanish"],
         areaServed: "MX",

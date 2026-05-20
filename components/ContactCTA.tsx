@@ -40,8 +40,8 @@ export function ContactCTA() {
                 />
               </svg>
             </Link>
-            <a href="mailto:hola@arete.mx" className="btn-secondary">
-              hola@arete.mx
+            <a href="mailto:manuel@arete.business" className="btn-secondary">
+              manuel@arete.business
             </a>
           </div>
         </Reveal>

@@ -27,7 +27,7 @@ const sitemap = [
   {
     title: "Contacto",
     items: [
-      { href: "mailto:hola@arete.mx", label: "hola@arete.mx" },
+      { href: "mailto:manuel@arete.business", label: "manuel@arete.business" },
       { href: "/contacto", label: "Agendar 30 min" },
     ],
   },

@@ -67,10 +67,10 @@ export default function ContactoPage() {
                 <div>
                   <p className="eyebrow mb-4">Correo directo</p>
                   <a
-                    href="mailto:hola@arete.mx"
+                    href="mailto:manuel@arete.business"
                     className="font-display text-3xl link-underline text-ink"
                   >
-                    hola@arete.mx
+                    manuel@arete.business
                   </a>
                 </div>
               </Reveal>
