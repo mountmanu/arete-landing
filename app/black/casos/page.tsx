@@ -65,7 +65,7 @@ export default function CasosBlackPage() {
               </Reveal>
               <Reveal delay={0.15}>
                 <p>
-                  Doña Tota y Bento operan con paneles multi-sucursal que
+                  Doña Tota opera con paneles multi-sucursal que
                   reemplazan a ocho reportes manuales — la misma arquitectura
                   que mostrará a su consejo el estado de cumplimiento
                   consolidado de su grupo.

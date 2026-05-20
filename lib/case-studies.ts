@@ -112,7 +112,7 @@ export const caseStudies: CaseStudy[] = [
       "Los gerentes regionales ahora saben qué sucursal necesita una visita el mismo día. La dirección tiene una sola fuente de verdad.",
     ],
     reuse: [
-      "Conectores de POS reutilizables en Bento",
+      "Conectores de POS reutilizables en nuevos clientes del vertical",
       "Motor de costeo teórico empacable a hospitales",
       "Plantilla de panel regional",
     ],
@@ -155,37 +155,6 @@ export const caseStudies: CaseStudy[] = [
     ],
     stack: ["Next.js", "Postgres", "CFDI", "Auth multi-rol", "Bitácora"],
     order: 4,
-  },
-  {
-    slug: "bento",
-    client: "Bento",
-    vertical: "restaurant",
-    verticalLabel: "Restaurantes",
-    title: "Un nuevo concepto, lanzado con instrumentación de cadena madura.",
-    tagline:
-      "Bento abrió con el dashboard que otras cadenas tardan años en construir.",
-    year: "2024",
-    scope: "Lanzamiento · Punto de venta · BI · Operaciones",
-    problem: [
-      "Bento es un concepto nuevo de comida — joven, ágil, con ambiciones de cadena. El equipo no quería abrir y luego \"resolver\" la información meses después: querían lanzar con la misma claridad operativa que tienen las cadenas grandes.",
-      "El reto era empacar lo que aprendimos en Doña Tota y entregárselo a un equipo más pequeño, sin sacrificar profundidad.",
-    ],
-    solution: [
-      "Reutilizamos el pack de restaurantes y lo desplegamos en seis semanas: POS conectado, costeo activo desde el día uno, panel diario, alertas de variación. El equipo de Bento abrió la primera unidad con instrumentación de cadena madura.",
-      "Es exactamente la promesa del modelo compound de Areté: el segundo cliente del mismo vertical recibe en semanas lo que el primero construyó en meses.",
-    ],
-    reuse: [
-      "Pack de restaurantes completo del proyecto Doña Tota",
-      "Conectores POS",
-      "Plantilla de panel diario",
-    ],
-    impact: [
-      { metric: "6 semanas", detail: "del kickoff al panel productivo" },
-      { metric: "Día 1", detail: "con costeo y mermas activos" },
-      { metric: "−65%", detail: "tiempo de implementación vs el primer cliente" },
-    ],
-    stack: ["Next.js", "POS", "ETL", "BI", "Pack restaurante"],
-    order: 5,
   },
   {
     slug: "job-tracker-bi",

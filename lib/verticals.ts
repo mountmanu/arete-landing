@@ -61,7 +61,7 @@ export const verticals: Vertical[] = [
       "Panel regional con drilldown a sucursal",
       "Alertas de variación crítica vía agentes",
     ],
-    anchorClients: ["Doña Tota", "Bento"],
+    anchorClients: ["Doña Tota"],
     caseSlug: "dona-tota-bi",
   },
   {

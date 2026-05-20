@@ -5,7 +5,6 @@ const anchors = [
   "Notaría Pública 273",
   "Hospital · Bajío",
   "Doña Tota",
-  "Bento",
   "Comunidad Residencial",
   "Job Tracker BI",
   "Laura Zanuna",
