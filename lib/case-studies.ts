@@ -63,7 +63,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "hospital-pricing",
-    client: "Hospital privado · Bajío",
+    client: "Hospital Victoria La Salle",
     vertical: "hospital",
     verticalLabel: "Hospital",
     title: "El pricing como sistema vivo, no como hoja de cálculo.",

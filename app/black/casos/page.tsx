@@ -57,7 +57,7 @@ export default function CasosBlackPage() {
                 <p>
                   Notaría Pública 45 y 273 procesan escrituras con el mismo
                   núcleo de bitácora auditable que ahora vigila operaciones
-                  bajo umbral LFPIORPI. Un hospital privado del Bajío
+                  bajo umbral LFPIORPI. Hospital Victoria La Salle
                   recupera más de 11 % de margen filtrado con el mismo motor
                   de detección de fugas que conciliará operaciones contra
                   Avisos al SPPLD.

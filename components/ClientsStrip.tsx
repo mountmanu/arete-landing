@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 const anchors = [
   "Notaría Pública 45",
   "Notaría Pública 273",
-  "Hospital · Bajío",
+  "Hospital Victoria La Salle",
   "Doña Tota",
   "Comunidad Residencial",
   "Job Tracker BI",

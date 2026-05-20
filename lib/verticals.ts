@@ -45,7 +45,7 @@ export const verticals: Vertical[] = [
       "Agente de cobranza preventiva",
       "Detección de fugas y leakage en cobros",
     ],
-    anchorClients: ["Hospital privado, Bajío"],
+    anchorClients: ["Hospital Victoria La Salle"],
     caseSlug: "hospital-pricing",
   },
   {
