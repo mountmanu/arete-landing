@@ -23,7 +23,7 @@ const sitemap = [
   {
     title: "Contacto",
     items: [
-      { href: "mailto:volismfa@gmail.com", label: "volismfa@gmail.com" },
+      { href: "mailto:manuel@arete.business", label: "manuel@arete.business" },
       { href: "/black/contacto", label: "Solicitar acceso" },
     ],
   },

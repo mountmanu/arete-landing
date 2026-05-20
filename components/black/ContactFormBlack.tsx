@@ -69,7 +69,7 @@ export function ContactFormBlack() {
         "",
         data.message,
       ].join("\n");
-      window.location.href = `mailto:volismfa@gmail.com?subject=${encodeURIComponent(
+      window.location.href = `mailto:manuel@arete.business?subject=${encodeURIComponent(
         subject,
       )}&body=${encodeURIComponent(body)}`;
     }
@@ -90,10 +90,10 @@ export function ContactFormBlack() {
         <p className="mt-6 text-mute max-w-md mx-auto leading-relaxed">
           Si necesita contactar directamente, escriba a{" "}
           <a
-            href="mailto:volismfa@gmail.com"
+            href="mailto:manuel@arete.business"
             className="link-underline text-gold font-medium"
           >
-            volismfa@gmail.com
+            manuel@arete.business
           </a>
           .
         </p>

@@ -63,10 +63,10 @@ export default function ContactoBlackPage() {
                 <div>
                   <p className="eyebrow text-gold mb-4">Correo directo</p>
                   <a
-                    href="mailto:volismfa@gmail.com"
+                    href="mailto:manuel@arete.business"
                     className="font-display text-3xl link-underline text-ink hover:text-gold transition-colors"
                   >
-                    volismfa@gmail.com
+                    manuel@arete.business
                   </a>
                 </div>
               </Reveal>
