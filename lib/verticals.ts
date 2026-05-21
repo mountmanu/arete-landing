@@ -77,7 +77,7 @@ export const verticals: Vertical[] = [
       "Mantenimiento preventivo programado",
       "Panel para comité con accesos por rol",
     ],
-    anchorClients: ["Comunidad residencial Norte"],
+    anchorClients: ["Estacionamiento + Car Wash"],
     caseSlug: "comunidad-bi",
   },
   {

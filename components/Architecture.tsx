@@ -1,11 +1,11 @@
 import { Reveal } from "./Reveal";
 
 const corePieces = [
-  { name: "Auth", description: "Identidad, roles, multi-tenant" },
-  { name: "Billing", description: "Facturación CFDI y suscripciones" },
-  { name: "RAG", description: "Recuperación sobre documentos del cliente" },
-  { name: "Agentes", description: "Razonamiento autónomo y herramientas" },
-  { name: "MCP", description: "Conectores a sistemas existentes" },
+  { name: "Auth", description: "Next.js · Supabase · multi-tenant" },
+  { name: "Billing", description: "CFDI · Stripe MX · suscripciones" },
+  { name: "RAG", description: "Claude API · embeddings · docs del cliente" },
+  { name: "Agentes", description: "Claude API · tool use · razonamiento" },
+  { name: "MCP", description: "FastAPI · Rust (parsers) · conectores" },
   { name: "Observabilidad", description: "Trazas, métricas, auditoría" },
 ];
 
@@ -98,6 +98,9 @@ export function Architecture() {
                           </div>
                         </div>
                       ))}
+                    </div>
+                    <div className="mt-6 pt-6 border-t border-paper/20 text-xs text-paper/40 tracking-[0.12em] uppercase">
+                      Next.js · FastAPI · Rust · Claude API · Supabase · Stripe MX
                     </div>
                   </div>
                 </div>

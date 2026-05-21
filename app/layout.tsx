@@ -3,6 +3,7 @@ import { EB_Garamond, Inter } from "next/font/google";
 import { SiteChrome } from "@/components/SiteChrome";
 import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/JsonLd";
 import { Analytics } from "@vercel/analytics/next";
+import { LangProvider } from "@/contexts/LangContext";
 import "./globals.css";
 
 const displayFont = EB_Garamond({
@@ -73,7 +74,9 @@ export default function RootLayout({
         <WebSiteJsonLd />
       </head>
       <body className="min-h-screen flex flex-col">
-        <SiteChrome>{children}</SiteChrome>
+        <LangProvider>
+          <SiteChrome>{children}</SiteChrome>
+        </LangProvider>
         <Analytics />
       </body>
     </html>

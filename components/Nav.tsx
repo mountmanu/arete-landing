@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { LogoFull } from "./Logo";
+import { useLang } from "@/contexts/LangContext";
 
 const links = [
   { href: "/nosotros", label: "Cómo trabajo" },
@@ -14,6 +15,7 @@ const links = [
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { lang, toggleLang } = useLang();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -45,6 +47,16 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
+          <button
+            type="button"
+            onClick={toggleLang}
+            aria-label={lang === "es" ? "Switch to English" : "Cambiar a español"}
+            className="flex items-center gap-1 text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
+          >
+            <span className={lang === "es" ? "text-ink" : "text-mute"}>ES</span>
+            <span className="text-mute">·</span>
+            <span className={lang === "en" ? "text-ink" : "text-mute"}>EN</span>
+          </button>
           <Link href="/contacto" className="btn-primary">
             Hablemos
           </Link>
@@ -95,6 +107,16 @@ export function Nav() {
             >
               Hablemos
             </Link>
+            <button
+              type="button"
+              onClick={toggleLang}
+              aria-label={lang === "es" ? "Switch to English" : "Cambiar a español"}
+              className="self-start flex items-center gap-1 text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
+            >
+              <span className={lang === "es" ? "text-ink" : "text-mute"}>ES</span>
+              <span className="text-mute">·</span>
+              <span className={lang === "en" ? "text-ink" : "text-mute"}>EN</span>
+            </button>
           </nav>
         </div>
       )}

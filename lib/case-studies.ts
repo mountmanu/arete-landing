@@ -127,7 +127,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "comunidad-bi",
-    client: "Comunidad residencial",
+    client: "Estacionamiento + Car Wash",
     vertical: "community",
     verticalLabel: "Comunidades",
     title: "La administración condominal, profesionalizada.",

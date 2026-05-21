@@ -1,15 +1,44 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "./Reveal";
+import { useLang } from "@/contexts/LangContext";
+
+const content = {
+  es: {
+    eyebrow: "Quién está detrás",
+    p1: "Llevo años construyendo software para negocios mexicanos — notarías, hospitales, restaurantes, comunidades, firmas profesionales. Lo aprendido en cada proyecto vive en un núcleo común: el siguiente cliente lo recibe ya armado.",
+    p2: "Cuando me contratas no empiezas de cero. Recibes el resultado de seis sistemas en producción, ajustado a cómo tu equipo ya trabaja. Eso es lo que significa componer en lugar de revender.",
+    p3: "Trabajo directamente con cada cliente. Sin intermediarios, sin scope creep, sin promesas que no se cumplen. Si lo que necesitas no encaja con esto, te lo digo en la primera llamada.",
+    cta1: "Hablemos 30 minutos",
+    linkedin: "LinkedIn →",
+    credential: "Ponente · Embedded Vision Summit · Santa Clara CA · Mayo 2026",
+    figcaption: "Manuel Flores · Fundador",
+  },
+  en: {
+    eyebrow: "Who's behind this",
+    p1: "I've spent years building software for Mexican businesses — law firms, hospitals, restaurants, communities, professional services. Everything I learn on each project lives in a shared nucleus: the next client receives it ready.",
+    p2: "When you hire me, you don't start from zero. You receive the output of six production systems, adapted to how your team already works. That's what composing means — not reselling.",
+    p3: "I work directly with every client. No middlemen, no scope creep, no promises left unkept. If what you need doesn't fit how I work, I'll tell you on the first call.",
+    cta1: "Let's talk 30 minutes",
+    linkedin: "LinkedIn →",
+    credential: "Speaker · Embedded Vision Summit · Santa Clara CA · May 2026",
+    figcaption: "Manuel Flores · Founder",
+  },
+};
 
 export function Founder() {
+  const { lang } = useLang();
+  const t = content[lang];
+
   return (
     <section className="py-[var(--spacing-section)] bg-soft rule-top rule-bottom">
       <div className="container-editorial">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-5 order-2 lg:order-1">
             <Reveal>
-              <p className="eyebrow mb-6">Quién está detrás</p>
+              <p className="eyebrow mb-6">{t.eyebrow}</p>
             </Reveal>
             <Reveal delay={0.05}>
               <h2
@@ -22,42 +51,56 @@ export function Founder() {
 
             <div className="mt-8 prose-editorial">
               <Reveal delay={0.1}>
-                <p>
-                  Llevo años construyendo software para negocios mexicanos —
-                  notarías, hospitales, restaurantes, comunidades, firmas
-                  profesionales. Lo aprendido en cada proyecto vive en un
-                  núcleo común: el siguiente cliente lo recibe ya armado.
-                </p>
+                <p>{t.p1}</p>
               </Reveal>
               <Reveal delay={0.15}>
                 <p>
-                  Cuando me contratas no empiezas de cero. Recibes el
-                  resultado de seis sistemas en producción, ajustado a cómo
-                  tu equipo ya trabaja. Eso es lo que significa{" "}
-                  <em>componer</em> en lugar de revender.
+                  {lang === "es" ? (
+                    <>
+                      Cuando me contratas no empiezas de cero. Recibes el
+                      resultado de seis sistemas en producción, ajustado a cómo
+                      tu equipo ya trabaja. Eso es lo que significa{" "}
+                      <em>componer</em> en lugar de revender.
+                    </>
+                  ) : (
+                    t.p2
+                  )}
                 </p>
               </Reveal>
               <Reveal delay={0.2}>
-                <p>
-                  Trabajo directamente con cada cliente. Sin intermediarios,
-                  sin scope creep, sin promesas que no se cumplen. Si lo que
-                  necesitas no encaja con esto, te lo digo en la primera
-                  llamada.
-                </p>
+                <p>{t.p3}</p>
               </Reveal>
             </div>
 
             <Reveal delay={0.25}>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link href="/contacto" className="btn-primary">
-                  Hablemos 30 minutos
+                  {t.cta1}
                 </Link>
-                <Link
-                  href="/nosotros"
+                <a
+                  href="https://www.linkedin.com/in/manuel-flores-90653060/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
                 >
-                  Cómo trabajo →
-                </Link>
+                  {t.linkedin}
+                </a>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.3}>
+              <div className="mt-8 pt-8 border-t border-line">
+                <p className="text-[var(--text-caption)] text-mute tracking-[0.04em] uppercase">
+                  {t.credential}
+                </p>
+                <a
+                  href="https://manuelflores.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-block link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
+                >
+                  manuelflores.me →
+                </a>
               </div>
             </Reveal>
           </div>
@@ -76,7 +119,7 @@ export function Founder() {
                   />
                 </div>
                 <figcaption className="mt-5 text-center text-[var(--text-caption)] text-mute tracking-[0.04em] uppercase">
-                  Manuel Flores · Fundador
+                  {t.figcaption}
                 </figcaption>
               </figure>
             </Reveal>

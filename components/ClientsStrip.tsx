@@ -1,23 +1,31 @@
+"use client";
+
 import { Reveal } from "./Reveal";
+import { useLang } from "@/contexts/LangContext";
 
 const anchors = [
   "Notaría Pública 45",
   "Notaría Pública 273",
   "Hospital Victoria La Salle",
   "Doña Tota",
-  "Comunidad Residencial",
+  "Estacionamiento + Car Wash",
   "Job Tracker BI",
   "Laura Zanuna",
 ];
 
+const eyebrow = {
+  es: "Operaciones reales, en producción",
+  en: "Real operations, in production",
+};
+
 export function ClientsStrip() {
+  const { lang } = useLang();
+
   return (
     <section className="py-[var(--spacing-block)] rule-top rule-bottom">
       <div className="container-editorial">
         <Reveal>
-          <p className="eyebrow text-center mb-10">
-            Operaciones reales, en producción
-          </p>
+          <p className="eyebrow text-center mb-10">{eyebrow[lang]}</p>
         </Reveal>
         <Reveal delay={0.1}>
           <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 md:gap-x-16">
