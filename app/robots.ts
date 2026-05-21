@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://arete.mx/sitemap.xml",
+    sitemap: "https://arete.business/sitemap.xml",
   };
 }

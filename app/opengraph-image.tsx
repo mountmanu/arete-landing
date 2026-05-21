@@ -54,7 +54,7 @@ export default async function OpengraphImage() {
               fontStyle: "italic",
             }}
           >
-            Listos en semanas, no en años.
+            Construido sobre lo que ya funciona.
           </div>
         </div>
 
@@ -70,7 +70,7 @@ export default async function OpengraphImage() {
           }}
         >
           <span>Areté Soluciones S.A. de C.V.</span>
-          <span>arete.mx</span>
+          <span>arete.business</span>
         </div>
       </div>
     ),

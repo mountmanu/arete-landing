@@ -20,7 +20,7 @@ const bodyFont = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://arete.mx"),
+  metadataBase: new URL("https://arete.business"),
   title: {
     default: "Areté — Software AI-nativo que compone valor",
     template: "%s · Areté",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_MX",
-    url: "https://arete.mx",
+    url: "https://arete.business",
     siteName: "Areté",
     title: "Areté — Software AI-nativo que compone valor",
     description:

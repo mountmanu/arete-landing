@@ -1,4 +1,4 @@
-const SITE_URL = "https://arete.mx";
+const SITE_URL = "https://arete.business";
 
 export function OrganizationJsonLd() {
   const data = {

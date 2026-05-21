@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { caseStudies } from "@/lib/case-studies";
 
-const BASE_URL = "https://arete.mx";
+const BASE_URL = "https://arete.business";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
