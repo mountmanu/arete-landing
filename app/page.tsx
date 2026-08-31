@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { ClientsStrip } from "@/components/ClientsStrip";
+import { TechStackStrip } from "@/components/TechStackStrip";
 import { Founder } from "@/components/Founder";
 import { Principios } from "@/components/Principios";
 import { Architecture } from "@/components/Architecture";
@@ -13,6 +14,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ClientsStrip />
+      <TechStackStrip />
       <Founder />
       <Principios />
       <Architecture />

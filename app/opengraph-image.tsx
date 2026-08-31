@@ -69,7 +69,7 @@ export default async function OpengraphImage() {
             textTransform: "uppercase",
           }}
         >
-          <span>Areté Soluciones S.A. de C.V.</span>
+          <span>Areté Soluciones</span>
           <span>arete.business</span>
         </div>
       </div>

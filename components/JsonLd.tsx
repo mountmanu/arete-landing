@@ -6,7 +6,6 @@ export function OrganizationJsonLd() {
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
     name: "Areté",
-    legalName: "Areté Soluciones S.A. de C.V.",
     alternateName: "Areté Soluciones",
     url: SITE_URL,
     logo: `${SITE_URL}/favicon.svg`,
@@ -19,7 +18,8 @@ export function OrganizationJsonLd() {
     address: {
       "@type": "PostalAddress",
       addressCountry: "MX",
-      addressLocality: "Ciudad de México",
+      addressRegion: "Tamaulipas",
+      addressLocality: "Ciudad Victoria",
     },
     contactPoint: [
       {

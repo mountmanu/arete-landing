@@ -31,6 +31,13 @@ const sitemap = [
       { href: "/contacto", label: "Agendar 30 min" },
     ],
   },
+  {
+    title: "Areté",
+    items: [
+      { href: "/nosotros", label: "Cómo trabajo" },
+      { href: "https://www.linkedin.com/in/manuel-flores-90653060/", label: "LinkedIn" },
+    ],
+  },
 ];
 
 export function Footer() {
@@ -49,13 +56,13 @@ export function Footer() {
               anterior.
             </p>
             <p className="mt-8 text-paper/55 text-sm">
-              Areté Soluciones S.A. de C.V.
+              Areté Soluciones
               <br />
               Operación remota desde México
             </p>
           </div>
 
-          <div className="md:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="md:col-span-7 grid grid-cols-2 md:grid-cols-4 gap-8">
             {sitemap.map((column) => (
               <div key={column.title}>
                 <h3 className="eyebrow text-paper/60 mb-5">{column.title}</h3>
@@ -80,7 +87,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-paper/55">
           <p>
-            &copy; {year} Areté Soluciones S.A. de C.V. — Todos los derechos
+            &copy; {year} Areté Soluciones — Todos los derechos
             reservados.
           </p>
           <p>Construido con cuidado en México.</p>

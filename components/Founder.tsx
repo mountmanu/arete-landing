@@ -13,7 +13,9 @@ const content = {
     p3: "Trabajo directamente con cada cliente. Sin intermediarios, sin scope creep, sin promesas que no se cumplen. Si lo que necesitas no encaja con esto, te lo digo en la primera llamada.",
     cta1: "Hablemos 30 minutos",
     linkedin: "LinkedIn →",
-    credential: "Ponente · Embedded Vision Summit · Santa Clara CA · Mayo 2026",
+    credential: "Fundador y director técnico · Areté Soluciones",
+    stack: "TypeScript · Python · Rust · PostgreSQL · Claude API · YOLOv8",
+    based: "Ciudad Victoria, Tamaulipas · Atiendo clientes en México, LATAM y EE. UU.",
     figcaption: "Manuel Flores · Fundador",
   },
   en: {
@@ -23,7 +25,9 @@ const content = {
     p3: "I work directly with every client. No middlemen, no scope creep, no promises left unkept. If what you need doesn't fit how I work, I'll tell you on the first call.",
     cta1: "Let's talk 30 minutes",
     linkedin: "LinkedIn →",
-    credential: "Speaker · Embedded Vision Summit · Santa Clara CA · May 2026",
+    credential: "Founder & Technical Director · Areté Soluciones",
+    stack: "TypeScript · Python · Rust · PostgreSQL · Claude API · YOLOv8",
+    based: "Ciudad Victoria, Tamaulipas, Mexico · Serving clients in Mexico, LATAM and the U.S.",
     figcaption: "Manuel Flores · Founder",
   },
 };
@@ -90,17 +94,15 @@ export function Founder() {
 
             <Reveal delay={0.3}>
               <div className="mt-8 pt-8 border-t border-line">
-                <p className="text-[var(--text-caption)] text-mute tracking-[0.04em] uppercase">
+                <p className="text-[var(--text-caption)] text-ink tracking-[0.04em] uppercase font-medium">
                   {t.credential}
                 </p>
-                <a
-                  href="https://manuelflores.me"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 inline-block link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
-                >
-                  manuelflores.me →
-                </a>
+                <p className="mt-2 text-[var(--text-caption)] text-mute tracking-[0.04em] uppercase">
+                  {t.stack}
+                </p>
+                <p className="mt-2 text-[var(--text-caption)] text-mute tracking-[0.04em] uppercase">
+                  {t.based}
+                </p>
               </div>
             </Reveal>
           </div>

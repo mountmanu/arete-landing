@@ -20,7 +20,7 @@ const content = {
     ],
   },
   en: {
-    eyebrow: "AI-native software for Mexican businesses",
+    eyebrow: "AI-native software for Mexican businesses · Bilingual EN/ES founder",
     h1: "Systems that run your business.",
     h1em: "Built on what already works.",
     body: "I build AI-native software for Mexican businesses. Every new client inherits the accumulated work of all previous ones — without paying for what I've already built, without waiting for me to learn their industry. Six systems in production. One shared nucleus underneath.",

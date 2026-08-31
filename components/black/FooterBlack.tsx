@@ -49,7 +49,7 @@ export function FooterBlack() {
               acumulada de Areté Soluciones.
             </p>
             <p className="mt-8 text-mute/80 text-sm">
-              Areté Soluciones S.A. de C.V.
+              Areté Soluciones
               <br />
               Operación remota desde México · Cobertura LATAM
             </p>
@@ -80,7 +80,7 @@ export function FooterBlack() {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-mute">
           <p>
-            &copy; {year} Areté Soluciones S.A. de C.V. — Todos los derechos
+            &copy; {year} Areté Soluciones — Todos los derechos
             reservados.
           </p>
           <p className="text-mute/70">

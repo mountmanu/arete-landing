@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 import { Reveal } from "@/components/Reveal";
+import { waLink, WA_MESSAGES } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Conversemos sobre tu industria. Areté Soluciones S.A. de C.V. — software AI-nativo para PyMEs mexicanas.",
+    "Conversemos sobre tu industria. Areté Soluciones — software AI-nativo para PyMEs mexicanas.",
 };
 
 export default function ContactoPage() {
@@ -75,14 +76,32 @@ export default function ContactoPage() {
                 </div>
               </Reveal>
 
+              <Reveal delay={0.175}>
+                <div>
+                  <p className="eyebrow mb-4">WhatsApp directo</p>
+                  <a
+                    href={waLink(WA_MESSAGES.es.general)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-display text-3xl link-underline text-ink"
+                  >
+                    +52 834 196 3524
+                  </a>
+                  <p className="mt-3 text-[var(--text-body)] text-mute leading-relaxed">
+                    Es la vía más rápida. Escribe y te contesto yo, no un
+                    equipo de ventas.
+                  </p>
+                </div>
+              </Reveal>
+
               <Reveal delay={0.2}>
                 <div className="pt-12 border-t border-line">
-                  <p className="eyebrow mb-4">Razón social</p>
+                  <p className="eyebrow mb-4">Dónde opero</p>
                   <p className="font-display text-xl">
-                    Areté Soluciones S.A. de C.V.
+                    Areté Soluciones
                   </p>
                   <p className="mt-3 text-[var(--text-body)] text-mute leading-relaxed">
-                    Operación remota desde México
+                    Ciudad Victoria, Tamaulipas, México
                     <br />
                     Atención de lunes a viernes
                   </p>

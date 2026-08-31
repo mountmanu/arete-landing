@@ -83,7 +83,7 @@ export default function NosotrosPage() {
                 <Reveal>
                   <p>
                     <strong className="font-medium">
-                      Areté Soluciones S.A. de C.V.
+                      Areté Soluciones
                     </strong>{" "}
                     es una firma mexicana de software AI-nativo. Operamos sobre
                     una idea simple: la consultoría tradicional vende horas y
@@ -215,6 +215,7 @@ export default function NosotrosPage() {
           </Reveal>
         </div>
       </section>
+
     </>
   );
 }

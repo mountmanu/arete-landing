@@ -54,7 +54,7 @@ export default function ContactoBlackPage() {
                     Manuel Flores
                   </p>
                   <p className="mt-2 text-mute">
-                    Fundador · Areté Soluciones S.A. de C.V.
+                    Fundador · Areté Soluciones
                   </p>
                 </div>
               </Reveal>

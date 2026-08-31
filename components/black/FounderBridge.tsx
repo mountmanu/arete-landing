@@ -29,8 +29,8 @@ export function FounderBridge() {
             <div className="prose-editorial">
               <Reveal delay={0.1}>
                 <p>
-                  Areté Black opera bajo Areté Soluciones S.A. de C.V.,
-                  empresa mexicana con seis sistemas en producción y cinco
+                  Areté Black opera bajo Areté Soluciones, práctica
+                  mexicana de software con seis sistemas en producción y cinco
                   industrias atendidas: notarías, hospitales, restaurantes,
                   comunidades y servicios profesionales.
                 </p>

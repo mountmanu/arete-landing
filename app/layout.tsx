@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s · Areté",
   },
   description:
-    "Areté Soluciones S.A. de C.V. — consultoría mexicana de software AI-nativo. Construimos sobre un núcleo reusable y empacamos por vertical: notarías, hospitales, restaurantes, comunidades y servicios profesionales.",
+    "Areté Soluciones — consultoría mexicana de software AI-nativo, fundada y dirigida por Manuel Flores. 6 sistemas en producción en 5 industrias reguladas: notarías, hospitales, restaurantes, comunidades y servicios profesionales.",
   keywords: [
     "Areté",
     "Areté Soluciones",
@@ -37,10 +37,15 @@ export const metadata: Metadata = {
     "BI restaurantes",
     "RAG México",
     "compound AI",
+    "Manuel Flores",
+    "desarrollo de software a la medida México",
+    "tienda en línea PyME México",
+    "sistemas de inventario y ERP",
+    "TypeScript Rust Claude API",
   ],
-  authors: [{ name: "Areté Soluciones S.A. de C.V." }],
-  creator: "Areté Soluciones S.A. de C.V.",
-  publisher: "Areté Soluciones S.A. de C.V.",
+  authors: [{ name: "Areté Soluciones" }],
+  creator: "Areté Soluciones",
+  publisher: "Areté Soluciones",
   openGraph: {
     type: "website",
     locale: "es_MX",

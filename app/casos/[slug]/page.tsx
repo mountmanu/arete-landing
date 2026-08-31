@@ -47,11 +47,11 @@ export default async function CaseStudyPage({
     description: c.tagline,
     author: {
       "@type": "Organization",
-      name: "Areté Soluciones S.A. de C.V.",
+      name: "Areté Soluciones",
     },
     publisher: {
       "@type": "Organization",
-      name: "Areté Soluciones S.A. de C.V.",
+      name: "Areté Soluciones",
     },
     datePublished: `${c.year}-01-01`,
     inLanguage: "es-MX",

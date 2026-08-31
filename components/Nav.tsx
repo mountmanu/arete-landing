@@ -3,13 +3,15 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { LogoFull } from "./Logo";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { useLang } from "@/contexts/LangContext";
+import { waLink, WA_MESSAGES } from "@/lib/config";
 
-const links = [
-  { href: "/nosotros", label: "Cómo trabajo" },
-  { href: "/verticales", label: "Industrias" },
-  { href: "/casos", label: "Casos" },
-  { href: "/contacto", label: "Contacto" },
+const staticLinks = [
+  { href: "/nosotros", es: "Cómo trabajo", en: "How I work" },
+  { href: "/verticales", es: "Industrias", en: "Industries" },
+  { href: "/casos", es: "Casos", en: "Cases" },
+  { href: "/contacto", es: "Contacto", en: "Contact" },
 ];
 
 export function Nav() {
@@ -38,13 +40,13 @@ export function Nav() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
-          {links.map((link) => (
+          {staticLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className="text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium link-underline"
             >
-              {link.label}
+              {lang === "en" ? link.en : link.es}
             </Link>
           ))}
           <button
@@ -57,9 +59,15 @@ export function Nav() {
             <span className="text-mute">·</span>
             <span className={lang === "en" ? "text-ink" : "text-mute"}>EN</span>
           </button>
-          <Link href="/contacto" className="btn-primary">
-            Hablemos
-          </Link>
+          <a
+            href={waLink(WA_MESSAGES[lang].nav)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            <WhatsAppIcon />
+            {lang === "en" ? "WhatsApp" : "Hablemos"}
+          </a>
         </nav>
 
         <button
@@ -90,23 +98,26 @@ export function Nav() {
       {open && (
         <div className="md:hidden bg-paper border-t border-line">
           <nav className="container-editorial flex flex-col py-6 gap-5">
-            {links.map((link) => (
+            {staticLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="text-lg font-display"
               >
-                {link.label}
+                {lang === "en" ? link.en : link.es}
               </Link>
             ))}
-            <Link
-              href="/contacto"
+            <a
+              href={waLink(WA_MESSAGES[lang].nav)}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="btn-primary self-start mt-2"
             >
-              Hablemos
-            </Link>
+              <WhatsAppIcon />
+              {lang === "en" ? "WhatsApp" : "Hablemos"}
+            </a>
             <button
               type="button"
               onClick={toggleLang}

@@ -1,6 +1,6 @@
 # Areté — Landing Page
 
-Sitio institucional de **Areté Soluciones S.A. de C.V.**, consultoría mexicana de software AI-nativo. Núcleo reusable + packs por industria.
+Sitio institucional de **Areté Soluciones**, consultoría mexicana de software AI-nativo. Núcleo reusable + packs por industria.
 
 Aloja dos experiencias bajo un mismo dominio:
 
@@ -73,7 +73,7 @@ public/
 ## Marca
 
 ### Areté (principal)
-- **Razón social**: Areté Soluciones S.A. de C.V.
+- **Nombre comercial**: Areté Soluciones
 - **Logo**: wordmark en EB Garamond + apex mark
 - **Paleta**: Ink `#0A0A0A` · Paper `#FAFAFA` · Soft `#F5F5F5` · Mute `#525252` · Line `#E5E5E5`
 - **Tipografía**: EB Garamond (display) · Inter (body)
@@ -112,4 +112,4 @@ Despliegue recomendado: Vercel (auto-deploy desde main).
 
 ---
 
-© Areté Soluciones S.A. de C.V.
+© Areté Soluciones
