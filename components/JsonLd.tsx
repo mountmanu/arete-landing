@@ -30,7 +30,7 @@ export function OrganizationJsonLd() {
         areaServed: "MX",
       },
     ],
-    sameAs: ["https://www.linkedin.com/company/arete-soluciones"],
+    sameAs: ["https://www.linkedin.com/in/manuel-flores-90653060/"],
     knowsAbout: [
       "AI-native software",
       "Compound AI",
