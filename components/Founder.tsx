@@ -10,7 +10,7 @@ const content = {
     eyebrow: "Quién está detrás",
     p1: "Llevo años construyendo software para negocios mexicanos — notarías, hospitales, restaurantes, comunidades, firmas profesionales. Lo aprendido en cada proyecto vive en un núcleo común: el siguiente cliente lo recibe ya armado.",
     p2: "Cuando me contratas no empiezas de cero. Recibes el resultado de seis sistemas en producción, ajustado a cómo tu equipo ya trabaja. Eso es lo que significa componer en lugar de revender.",
-    p3: "Trabajo directamente con cada cliente. Sin intermediarios, sin scope creep, sin promesas que no se cumplen. Si lo que necesitas no encaja con esto, te lo digo en la primera llamada.",
+    p3: "Trabajo directamente con cada cliente. Sin intermediarios, sin cambios de alcance a media obra, sin promesas que no se cumplen. Si lo que necesitas no encaja con esto, te lo digo en la primera llamada.",
     cta1: "Hablemos 30 minutos",
     linkedin: "LinkedIn →",
     credential: "Fundador y director técnico · Areté Soluciones",

@@ -11,12 +11,12 @@ const content = {
       {
         n: "01",
         title: "Consultor independiente, no agencia",
-        body: "Trato directo con el fundador en cada proyecto. Sin account managers, sin subcontratos, sin scope creep.",
+        body: "Trato directo conmigo en cada proyecto. Sin ejecutivos de cuenta, sin subcontratos, sin cambios de alcance a media obra.",
       },
       {
         n: "02",
         title: "Los sistemas se mantienen — no se entregan y olvidan",
-        body: "Cada sistema tiene SLA activo: uptime monitoreado, parches aplicados, retainer mensual disponible.",
+        body: "Cada sistema queda monitoreado y con mantenimiento al día. Si algo se cae, lo veo yo antes que tú. Soporte mensual opcional.",
       },
       {
         n: "03",

@@ -4,7 +4,7 @@ const principios = [
   {
     number: "01",
     title: "Componer, no revender.",
-    body: "El conocimiento de un engagement vive en el código del núcleo, no en una sola persona. Lo que aprendo hoy reduce el costo del próximo cliente.",
+    body: "Lo aprendido en cada proyecto vive en el código del núcleo, no en una sola persona. Lo que aprendo hoy reduce el costo del próximo cliente.",
   },
   {
     number: "02",
@@ -42,7 +42,7 @@ export function Principios() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-8 text-[var(--text-body-lg)] leading-relaxed text-ink">
-                Decisiones que se toman antes de cada engagement, no durante.
+                Decisiones que se toman antes de empezar, no a media obra.
               </p>
             </Reveal>
           </div>

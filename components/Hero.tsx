@@ -16,7 +16,7 @@ const content = {
       { label: "Sistemas en producción", value: "6" },
       { label: "Verticales en producción", value: "5" },
       { label: "Tiempo a producción", value: "4–12 sem" },
-      { label: "Valor contractual por cliente", value: "~$60K USD" },
+      { label: "Trato directo con el dueño", value: "1 a 1" },
     ],
   },
   en: {
@@ -30,7 +30,7 @@ const content = {
       { label: "Systems in production", value: "6" },
       { label: "Verticals in production", value: "5" },
       { label: "Time to production", value: "4–12 wks" },
-      { label: "Contract value per client", value: "~$60K USD" },
+      { label: "Direct line to the owner", value: "1-on-1" },
     ],
   },
 };

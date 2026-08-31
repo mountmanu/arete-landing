@@ -9,7 +9,6 @@ const anchors = [
   "Hospital Victoria La Salle",
   "Doña Tota",
   "Estacionamiento + Car Wash",
-  "Job Tracker BI",
   "Laura Zanuna",
 ];
 

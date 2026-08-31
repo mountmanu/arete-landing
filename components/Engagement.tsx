@@ -60,7 +60,7 @@ export function Engagement() {
               className="text-balance"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Cuatro modos de engagement.
+              Cuatro formas de trabajar juntos.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
