@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 import { Reveal } from "@/components/Reveal";
 import { waLink, WA_MESSAGES } from "@/lib/config";
@@ -47,15 +46,6 @@ export default function ContactoPage() {
             <aside className="lg:col-span-5 lg:pl-8 space-y-12">
               <Reveal delay={0.1}>
                 <div className="flex items-center gap-5">
-                  <div className="relative w-20 h-20 overflow-hidden bg-soft shrink-0">
-                    <Image
-                      src="/images/manuel.jpg"
-                      alt="Manuel Flores"
-                      fill
-                      sizes="80px"
-                      className="object-cover grayscale"
-                    />
-                  </div>
                   <div>
                     <p className="eyebrow mb-1">Te responde directamente</p>
                     <p className="font-display text-xl">Manuel Flores</p>

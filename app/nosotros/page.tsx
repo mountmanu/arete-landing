@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { Engagement } from "@/components/Engagement";
@@ -59,26 +58,7 @@ export default function NosotrosPage() {
       <section className="pb-[var(--spacing-section)]">
         <div className="container-editorial">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            <div className="lg:col-span-5">
-              <Reveal>
-                <figure className="relative">
-                  <div className="relative aspect-[3/4] w-full overflow-hidden bg-soft">
-                    <Image
-                      src="/images/manuel.jpg"
-                      alt="Manuel Flores, fundador de Areté Soluciones"
-                      fill
-                      sizes="(max-width: 1024px) 90vw, 480px"
-                      className="object-cover grayscale"
-                    />
-                  </div>
-                  <figcaption className="mt-5 text-[var(--text-caption)] text-mute tracking-[0.04em] uppercase">
-                    Manuel Flores · Fundador de Areté Soluciones
-                  </figcaption>
-                </figure>
-              </Reveal>
-            </div>
-
-            <div className="lg:col-span-7">
+            <div className="lg:col-span-8">
               <div className="prose-editorial">
                 <Reveal>
                   <p>

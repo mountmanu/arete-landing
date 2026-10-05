@@ -13,8 +13,8 @@ const anchors = [
 ];
 
 const eyebrow = {
-  es: "Operaciones reales, en producción",
-  en: "Real operations, in production",
+  es: "En producción",
+  en: "In production",
 };
 
 export function ClientsStrip() {

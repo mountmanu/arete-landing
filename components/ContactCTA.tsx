@@ -8,17 +8,17 @@ import { waLink, WA_MESSAGES } from "@/lib/config";
 
 const content = {
   es: {
-    eyebrow: "Hablemos",
-    h2: "Clientes o conversaciones — directamente conmigo.",
-    body: "Trabajo con empresas mexicanas como fundador de Areté Soluciones. Si vienes por un proyecto, hablamos del problema — sin intermediarios, te contesto yo.",
-    cta1: "Escríbeme por WhatsApp",
+    eyebrow: "Contacto",
+    h2: "Hablemos de tu operación.",
+    body: "30 minutos, sin costo. Trato directo con el fundador.",
+    cta1: "WhatsApp",
     cta2: "Agendar 30 minutos",
   },
   en: {
-    eyebrow: "Let's talk",
-    h2: "Clients or conversations — direct line.",
-    body: "I work with Mexican businesses as the founder of Areté Soluciones. If you're here for a project, let's discuss the problem — no middlemen, you're talking to me.",
-    cta1: "Message me on WhatsApp",
+    eyebrow: "Contact",
+    h2: "Let's talk about your operation.",
+    body: "30 minutes, no charge. Direct line to the founder.",
+    cta1: "WhatsApp",
     cta2: "Book 30 minutes",
   },
 };
