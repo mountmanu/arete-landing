@@ -64,6 +64,40 @@ export function VerticalsGrid() {
               </Link>
             </Reveal>
           ))}
+
+          <Reveal delay={verticals.length * 0.05} className="h-full">
+            <Link
+              href="/contacto"
+              className="group block bg-paper p-8 md:p-10 h-full transition-colors hover:bg-soft"
+            >
+              <div className="text-mute font-display text-xl mb-3">
+                {String(verticals.length + 1).padStart(2, "0")}
+              </div>
+              <h3
+                className="font-display italic"
+                style={{ fontSize: "var(--text-display-md)" }}
+              >
+                Tu giro, aquí.
+              </h3>
+              <p className="mt-4 text-mute leading-relaxed">
+                ¿Tu negocio no es ninguno de estos? No importa. Mucho de lo
+                que necesitas ya lo construí para otro, y lo adapto a tu forma
+                de trabajar.
+              </p>
+              <div className="mt-8 flex items-center gap-2 text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium text-ink opacity-60 group-hover:opacity-100 group-hover:gap-3 transition-all duration-300">
+                Platiquemos
+                <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M1 7H13M13 7L7 1M13 7L7 13"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </Link>
+          </Reveal>
         </div>
       </div>
     </section>

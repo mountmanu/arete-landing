@@ -332,3 +332,29 @@
     background: var(--color-accent);
   }
 }
+
+/* Franja de logos: avanza de izquierda a derecha y se repite sin corte.
+   La pista contiene dos copias idénticas; recorrer la mitad = una vuelta. */
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee-track {
+  animation: marquee-right var(--marquee-duration, 48s) linear infinite;
+  will-change: transform;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
