@@ -6,32 +6,20 @@ import { useLang } from "@/contexts/LangContext";
 
 const content = {
   es: {
-    eyebrow: "Software AI-nativo para negocios mexicanos",
-    h1: "Sistemas que operan tu negocio.",
-    h1em: "Construido sobre lo que ya funciona.",
-    body: "Seis sistemas en producción, un solo núcleo. Tu proyecto empieza donde terminó el anterior.",
-    cta1: "Ver casos",
-    cta2: "Agenda 30 minutos",
-    stats: [
-      { label: "Sistemas en producción", value: "6" },
-      { label: "Industrias", value: "5" },
-      { label: "Tiempo a producción", value: "4–12 sem" },
-      { label: "Trato directo", value: "1 a 1" },
-    ],
+    eyebrow: "Sistemas a la medida para negocios que ya funcionan",
+    h1: "Un sistema hecho para tu negocio,",
+    h1em: "no tu negocio adaptado a un sistema.",
+    body: "Soy Manuel. Construyo la herramienta que tu negocio necesita para dejar de depender de hojas de cálculo, chats y memoria. Y me quedo después, para que siga funcionando.",
+    cta1: "Ver lo que he hecho",
+    cta2: "Platicar 30 minutos",
   },
   en: {
-    eyebrow: "AI-native software for Mexican businesses",
-    h1: "Systems that run your business.",
-    h1em: "Built on what already works.",
-    body: "Six systems in production, one shared core. Your project starts where the last one ended.",
-    cta1: "See cases",
-    cta2: "Book 30 minutes",
-    stats: [
-      { label: "Systems in production", value: "6" },
-      { label: "Industries", value: "5" },
-      { label: "Time to production", value: "4–12 wks" },
-      { label: "Direct line", value: "1-on-1" },
-    ],
+    eyebrow: "Custom systems for businesses that already work",
+    h1: "A system built around your business,",
+    h1em: "not your business bent around a system.",
+    body: "I'm Manuel. I build the tool your business needs to stop running on spreadsheets, chats and memory. And I stay afterwards, so it keeps working.",
+    cta1: "See my work",
+    cta2: "Talk for 30 minutes",
   },
 };
 
@@ -90,29 +78,7 @@ export function Hero() {
             </Link>
           </div>
         </Reveal>
-
-        <Reveal delay={0.5}>
-          <div className="mt-14 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pt-8 rule-top">
-            {t.stats.map((stat) => (
-              <Stat key={stat.label} label={stat.label} value={stat.value} />
-            ))}
-          </div>
-        </Reveal>
       </div>
     </section>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <div
-        className="font-display text-ink"
-        style={{ fontSize: "var(--text-display-md)", lineHeight: 1 }}
-      >
-        {value}
-      </div>
-      <div className="mt-3 eyebrow">{label}</div>
-    </div>
   );
 }

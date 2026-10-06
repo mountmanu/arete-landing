@@ -6,11 +6,15 @@ import { LogoFull } from "./Logo";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { useLang } from "@/contexts/LangContext";
 import { waLink, WA_MESSAGES } from "@/lib/config";
+import { caseStudies } from "@/lib/case-studies";
 
 const staticLinks = [
   { href: "/nosotros", es: "Cómo trabajo", en: "How I work" },
   { href: "/verticales", es: "Industrias", en: "Industries" },
   { href: "/casos", es: "Casos", en: "Cases" },
+  ...(caseStudies.some((c) => c.demo)
+    ? [{ href: "/demos", es: "Demos", en: "Demos" }]
+    : []),
   { href: "/contacto", es: "Contacto", en: "Contact" },
 ];
 

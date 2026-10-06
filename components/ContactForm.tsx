@@ -8,7 +8,7 @@ import { z } from "zod";
 const schema = z.object({
   name: z.string().min(2, "Tu nombre, por favor."),
   company: z.string().min(2, "¿De qué organización?"),
-  email: z.string().email("Necesitamos un correo válido."),
+  email: z.string().email("Necesito un correo válido."),
   vertical: z.enum([
     "notarial",
     "hospital",
@@ -17,7 +17,7 @@ const schema = z.object({
     "professional",
     "other",
   ]),
-  message: z.string().min(20, "Cuéntanos un poco más (mínimo 20 caracteres)."),
+  message: z.string().min(20, "Cuéntame un poco más."),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -65,7 +65,7 @@ export function ContactForm() {
           className="font-display"
           style={{ fontSize: "var(--text-display-md)" }}
         >
-          Gracias. Tu mensaje abrió tu cliente de correo.
+          Gracias. Tu mensaje abrió tu correo.
         </h3>
         <p className="mt-6 text-mute max-w-md mx-auto leading-relaxed">
           Si no se abrió, escríbeme directo a{" "}
@@ -138,7 +138,7 @@ export function ContactForm() {
           rows={6}
           {...register("message")}
           className="form-input resize-none"
-          placeholder="¿Qué problema operativo te trae aquí?"
+          placeholder="¿Qué se te está complicando en el negocio?"
         />
       </Field>
 

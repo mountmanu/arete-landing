@@ -17,7 +17,7 @@ export function CasesPreview() {
                 className="text-balance"
                 style={{ fontSize: "var(--text-display-lg)" }}
               >
-                Resultados, no demos.
+                Negocios reales, con nombre y apellido.
               </h2>
             </Reveal>
           </div>
@@ -26,7 +26,7 @@ export function CasesPreview() {
               href="/casos"
               className="link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
             >
-              Ver los 6 casos →
+              Ver los seis casos →
             </Link>
           </Reveal>
         </div>

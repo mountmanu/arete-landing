@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { CaseStudy } from "@/lib/case-studies";
+import { ClientLogos } from "./ClientLogo";
 
 export function CaseStudyCard({
   caseStudy,
@@ -24,18 +25,15 @@ export function CaseStudyCard({
         </span>
       </div>
 
-      <h3
-        className="text-balance"
-        style={{
-          fontSize: isFeature ? "var(--text-display-md)" : "1.5rem",
-          lineHeight: 1.15,
-        }}
-      >
-        {caseStudy.client}
-      </h3>
+      <h3 className="sr-only">{caseStudy.client}</h3>
+      <ClientLogos
+        ids={caseStudy.clients}
+        height={isFeature ? 56 : 44}
+        gapClass="gap-x-5 gap-y-3"
+      />
 
       <p
-        className={`${isFeature ? "mt-6" : "mt-4"} text-ink leading-relaxed ${
+        className={`${isFeature ? "mt-8" : "mt-6"} text-ink leading-relaxed ${
           isFeature ? "text-[var(--text-body-lg)]" : "text-[var(--text-body)]"
         }`}
       >

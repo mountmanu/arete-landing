@@ -9,15 +9,15 @@ import { waLink, WA_MESSAGES } from "@/lib/config";
 const content = {
   es: {
     eyebrow: "Contacto",
-    h2: "Hablemos de tu operación.",
-    body: "30 minutos, sin costo. Trato directo con el fundador.",
+    h2: "Platiquemos de tu negocio.",
+    body: "Media hora, sin costo y sin compromiso. Hablas conmigo, no con un vendedor.",
     cta1: "WhatsApp",
     cta2: "Agendar 30 minutos",
   },
   en: {
     eyebrow: "Contact",
-    h2: "Let's talk about your operation.",
-    body: "30 minutes, no charge. Direct line to the founder.",
+    h2: "Let's talk about your business.",
+    body: "Half an hour, free, no strings. You talk to me, not a salesperson.",
     cta1: "WhatsApp",
     cta2: "Book 30 minutes",
   },

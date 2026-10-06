@@ -10,7 +10,7 @@ export function OrganizationJsonLd() {
     url: SITE_URL,
     logo: `${SITE_URL}/icon-512.png`,
     description:
-      "Consultoría mexicana de software AI-nativo. Núcleo reusable + packs verticales para SMBs.",
+      "Sistemas a la medida para negocios en México, hechos, entregados y mantenidos por Manuel Flores.",
     foundingLocation: {
       "@type": "Country",
       name: "México",

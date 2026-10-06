@@ -2,47 +2,47 @@ import { Reveal } from "./Reveal";
 
 const tracks = [
   {
-    name: "Discovery",
-    duration: "1–2 semanas",
+    name: "Diagnóstico",
+    duration: "1 a 2 semanas",
     description:
-      "Mapeamos tu dominio, los flujos críticos, y diagnosticamos qué piezas del núcleo aplican. Termina con un plan ejecutable y un acuerdo claro.",
+      "Reviso tu operación y te digo qué sistema necesitas, qué ya existe y cuánto cuesta. Si decides no seguir, te quedas con el plan.",
     deliverables: [
-      "Mapa de dominio y procesos",
-      "Plan de pack con módulos a reutilizar y a construir",
-      "Estimación con ventana ±20%",
+      "Mapa de cómo trabaja tu negocio",
+      "Propuesta con alcance y precio cerrado",
+      "Plan de arranque",
     ],
   },
   {
-    name: "Pack ancla",
-    duration: "8–12 semanas",
+    name: "Sistema nuevo",
+    duration: "8 a 12 semanas",
     description:
-      "Para el primer cliente de una industria nueva. Co-financiamos la creación del pack: tú recibes un sistema a tu medida, y el núcleo gana una capacidad reusable.",
+      "Para un giro en el que todavía no he trabajado. Lo construimos juntos, con un precio preferente por ser el primero, y te queda un sistema hecho a tu medida.",
     deliverables: [
-      "Sistema en producción",
-      "Pack de la industria disponible para próximos clientes",
-      "Documentación operativa y entrenamiento del equipo",
+      "Sistema funcionando en tu negocio",
+      "Capacitación a tu equipo",
+      "Manual de uso sencillo",
     ],
   },
   {
-    name: "Pack maduro",
-    duration: "4–6 semanas",
+    name: "Sistema probado",
+    duration: "4 a 6 semanas",
     description:
-      "Para clientes en industrias donde ya existe pack. Recibes la madurez acumulada con ajustes a tu operación específica. Tiempo de implementación significativamente menor.",
+      "Para giros donde ya trabajé. Recibes lo que ya está probado, ajustado a tu operación. Más rápido y más barato.",
     deliverables: [
-      "Pack vertical desplegado",
-      "Personalización en flujos y reglas",
-      "Migración de datos legacy",
+      "Sistema instalado y ajustado",
+      "Tus reglas y tus flujos",
+      "Migración de la información que ya tienes",
     ],
   },
   {
-    name: "Operación continua",
+    name: "Acompañamiento",
     duration: "Mensual",
     description:
-      "Una vez en producción, mantengo, evoluciono e instrumento. Nuevas funcionalidades entran al pack y benefician a toda la red de clientes.",
+      "Después de entregar, me quedo: resuelvo, mantengo y mejoro. Cuando algo pasa, hablas conmigo.",
     deliverables: [
-      "SLA de soporte y disponibilidad",
-      "Roadmap mensual con cliente",
-      "Acceso a nuevas capacidades del núcleo",
+      "Soporte con tiempo de respuesta garantizado",
+      "Mejoras cada mes, acordadas contigo",
+      "Lo nuevo que construyo para otros, si te sirve",
     ],
   },
 ];
@@ -51,7 +51,7 @@ export function Engagement() {
   return (
     <section className="py-[var(--spacing-section)]">
       <div className="container-editorial">
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-10">
           <Reveal>
             <p className="eyebrow mb-6">Cómo me contratas</p>
           </Reveal>
@@ -60,13 +60,13 @@ export function Engagement() {
               className="text-balance"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Cuatro formas de trabajar juntos.
+              Cuatro maneras de trabajar conmigo.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-[var(--text-body-lg)] leading-relaxed text-ink">
-              Cada uno tiene una ventana clara y entregables explícitos. No
-              vendo horas por bolsa; vendo resultados con scope acotado.
+              Cada una con un alcance claro y un precio cerrado. No vendo
+              horas; vendo un sistema funcionando.
             </p>
           </Reveal>
         </div>

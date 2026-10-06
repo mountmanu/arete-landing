@@ -16,7 +16,7 @@ export function VerticalsGrid() {
                 className="text-balance"
                 style={{ fontSize: "var(--text-display-lg)" }}
               >
-                El mismo núcleo. Sectores distintos.
+                Conozco cómo se trabaja en estos giros.
               </h2>
             </Reveal>
           </div>
@@ -25,7 +25,7 @@ export function VerticalsGrid() {
               href="/verticales"
               className="link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
             >
-              Ver packs →
+              Ver todas →
             </Link>
           </Reveal>
         </div>
@@ -50,7 +50,7 @@ export function VerticalsGrid() {
                   {vertical.promise}
                 </p>
                 <div className="mt-8 flex items-center gap-2 text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium text-ink opacity-60 group-hover:opacity-100 group-hover:gap-3 transition-all duration-300">
-                  Ver pack
+                  Más
                   <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
                     <path
                       d="M1 7H13M13 7L7 1M13 7L7 13"

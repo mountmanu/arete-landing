@@ -6,33 +6,33 @@ import { Engagement } from "@/components/Engagement";
 export const metadata: Metadata = {
   title: "Cómo trabajo",
   description:
-    "Soy Manuel Flores, fundador de LINCE Sistemas. Construyo software AI-nativo para PyMEs mexicanas — un núcleo reusable y packs por industria.",
+    "Soy Manuel Flores. Construyo sistemas a la medida para negocios en México, los entrego funcionando y me quedo para que sigan funcionando.",
 };
 
 const methodology = [
   {
     step: "01",
-    name: "Discovery",
+    name: "Platicamos",
     description:
-      "Una semana contigo y tu equipo. Mapeamos el dominio, identificamos los flujos críticos y diagnosticamos qué piezas del núcleo aplican. Salimos con un plan ejecutable y una estimación.",
+      "Una semana contigo y con tu gente. Veo cómo trabajan, qué duele y qué se repite. Sales con un plan claro y un precio.",
   },
   {
     step: "02",
-    name: "Pack assembly",
+    name: "Armamos",
     description:
-      "Si tu industria ya tiene pack, lo ensamblamos. Si es nueva, definimos qué se construye una vez para reusarse muchas. Tú sabes qué pagas y qué recibe el siguiente cliente.",
+      "Tomo lo que ya tengo construido y lo ajusto a tu operación. Sabes qué estás pagando y qué vas a recibir, sin letras chiquitas.",
   },
   {
     step: "03",
-    name: "Deploy",
+    name: "Lo usas",
     description:
-      "Desplegamos en producción entre cuatro y doce semanas. Operas desde el primer mes. Iteramos sobre uso real, no sobre demos.",
+      "En cuatro a doce semanas está funcionando en tu negocio. Lo afinamos sobre tu uso real, no sobre una presentación.",
   },
   {
     step: "04",
-    name: "Compounding",
+    name: "Me quedo",
     description:
-      "El pack queda disponible para el siguiente cliente. Tu sistema sigue evolucionando con cada nueva capacidad que añadimos al núcleo.",
+      "Lo mantengo y lo hago crecer contigo. Cada mejora que construyo para otro negocio también puede servirte a ti.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function NosotrosPage() {
               className="text-balance max-w-5xl"
               style={{ fontSize: "var(--text-display-2xl)" }}
             >
-              Componer software, no revenderlo.
+              Lo construyo yo, lo entrego funcionando y me quedo.
             </h1>
           </Reveal>
         </div>
@@ -62,35 +62,29 @@ export default function NosotrosPage() {
               <div className="prose-editorial">
                 <Reveal>
                   <p>
-                    <strong className="font-medium">
-                      LINCE Sistemas
-                    </strong>{" "}
-                    es una firma mexicana de software AI-nativo. Operamos sobre
-                    una idea simple: la consultoría tradicional vende horas y
-                    empieza cada proyecto de cero. Nosotros construimos un
-                    núcleo reusable y empacamos por industria, para que cada
-                    proyecto componga valor sobre los anteriores.
+                    Soy <strong className="font-medium">Manuel Flores</strong>.
+                    Llevo años haciendo sistemas para negocios que no son
+                    corporativos: notarías, un hospital, una cadena de comida,
+                    un fraccionamiento, consultoras. Negocios donde el dueño
+                    conoce su operación de memoria y necesita que la
+                    herramienta se ajuste a esa operación, y no al revés.
                   </p>
                 </Reveal>
                 <Reveal delay={0.05}>
                   <p>
-                    Esto no es una estrategia de pricing — es una arquitectura.
-                    Auth, billing, RAG, agentes, MCP y observabilidad viven en
-                    un núcleo común. Sobre él, packs verticales para notarías,
-                    hospitales, restaurantes, comunidades y servicios
-                    profesionales. Cuando entras como cliente, no escoges entre
-                    &ldquo;off-the-shelf&rdquo; o &ldquo;custom&rdquo;: recibes
-                    la madurez del núcleo y la profundidad del pack.
+                    No empiezo de cero cada vez. Mucho de lo que un negocio
+                    necesita ya lo construí para otro: cobranza que cuadra
+                    sola, tableros que dicen la verdad, expedientes que no se
+                    pierden. Lo adapto a tu forma de trabajar, y por eso tardo
+                    semanas donde una agencia tarda meses.
                   </p>
                 </Reveal>
                 <Reveal delay={0.1}>
                   <p>
-                    El primer cliente de una industria co-financia la creación
-                    del pack y se queda con un sistema hecho a la medida de su
-                    operación. El segundo lo recibe en semanas. El tercero ya
-                    entra a una plataforma madura. La promesa no es
-                    &ldquo;haremos software para ti&rdquo; — es que{" "}
-                    <em>la siguiente entrega siempre será mejor que la anterior</em>.
+                    Y no desaparezco cuando entrego. El sistema queda
+                    funcionando, con alguien que lo conoce de arriba abajo y
+                    que contesta el teléfono. Si tu negocio cambia,{" "}
+                    <em>el sistema cambia contigo</em>.
                   </p>
                 </Reveal>
               </div>
@@ -102,14 +96,14 @@ export default function NosotrosPage() {
       <section className="py-[var(--spacing-section)] bg-soft rule-top rule-bottom">
         <div className="container-editorial">
           <Reveal>
-            <p className="eyebrow mb-6">Metodología</p>
+            <p className="eyebrow mb-6">Cómo es el proceso</p>
           </Reveal>
           <Reveal delay={0.05}>
             <h2
               className="mb-16 text-balance max-w-3xl"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Cuatro pasos del kickoff a producción.
+              Cuatro pasos, sin sorpresas.
             </h2>
           </Reveal>
 
@@ -152,9 +146,9 @@ export default function NosotrosPage() {
               className="font-display text-balance leading-snug text-ink"
               style={{ fontSize: "var(--text-display-md)" }}
             >
-              &ldquo;Construyo software para que las operaciones de mis
-              clientes alcancen su mejor versión. Sin intermediarios, sin
-              promesas que no se cumplen, sin cobrar dos veces el mismo
+              &ldquo;Hago sistemas para que el negocio de mi cliente trabaje
+              mejor, no para venderle tecnología. Sin intermediarios, sin
+              promesas que no se cumplen y sin cobrar dos veces el mismo
               aprendizaje.&rdquo;
             </blockquote>
           </Reveal>
@@ -173,7 +167,7 @@ export default function NosotrosPage() {
               className="text-balance text-paper"
               style={{ fontSize: "var(--text-display-xl)" }}
             >
-              ¿Empezamos por una conversación?
+              ¿Platicamos?
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

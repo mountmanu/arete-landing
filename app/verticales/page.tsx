@@ -3,11 +3,12 @@ import Link from "next/link";
 import { verticals } from "@/lib/verticals";
 import { findCase } from "@/lib/case-studies";
 import { Reveal } from "@/components/Reveal";
+import { ClientLogos } from "@/components/ClientLogo";
 
 export const metadata: Metadata = {
   title: "Industrias",
   description:
-    "Cinco packs verticales construidos sobre el núcleo LINCE: notarial, hospital, restaurantes, comunidades y servicios profesionales.",
+    "Notarías, hospitales, restaurantes, comunidades y servicios profesionales: lo que ya construí en cada giro y lo que puedes esperar.",
 };
 
 export default function VerticalesPage() {
@@ -23,14 +24,14 @@ export default function VerticalesPage() {
               className="text-balance max-w-4xl"
               style={{ fontSize: "var(--text-display-2xl)" }}
             >
-              Cinco industrias donde ya operamos.
+              Giros donde ya trabajé y sé qué duele.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-2xl text-[var(--text-body-lg)] text-ink leading-relaxed">
-              Cada industria es un pack de capacidades empacadas sobre el
-              núcleo LINCE. Lo que un cliente paga por construir, el siguiente
-              recibe en una fracción del tiempo.
+              No todos los negocios son iguales, y el software genérico lo
+              ignora. Aquí está lo que ya construí en cada giro y lo que
+              puedes esperar si el tuyo es uno de ellos.
             </p>
           </Reveal>
         </div>
@@ -52,7 +53,7 @@ export default function VerticalesPage() {
                 <div className="lg:col-span-5">
                   <Reveal>
                     <p className="eyebrow mb-4">
-                      Pack {String(idx + 1).padStart(2, "0")}
+                      Giro {String(idx + 1).padStart(2, "0")}
                     </p>
                   </Reveal>
                   <Reveal delay={0.05}>
@@ -76,7 +77,7 @@ export default function VerticalesPage() {
                         href={`/casos/${anchorCase.slug}`}
                         className="inline-flex items-center gap-2 mt-8 link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
                       >
-                        Ver caso · {anchorCase.client}
+                        Ver el caso →
                       </Link>
                     </Reveal>
                   )}
@@ -84,7 +85,7 @@ export default function VerticalesPage() {
 
                 <div className="lg:col-span-7">
                   <Reveal delay={0.1}>
-                    <p className="eyebrow mb-6">Lo que incluye el pack</p>
+                    <p className="eyebrow mb-6">Lo que incluye</p>
                   </Reveal>
                   <ul className="space-y-px bg-line">
                     {v.packIncludes.map((item, i) => (
@@ -103,10 +104,8 @@ export default function VerticalesPage() {
 
                   <Reveal delay={0.3}>
                     <div className="mt-8 pt-6 border-t border-line">
-                      <p className="eyebrow mb-3">Clientes ancla</p>
-                      <p className="text-[var(--text-body)] text-ink">
-                        {v.anchorClients.join(" · ")}
-                      </p>
+                      <p className="eyebrow mb-3">Ya lo usan</p>
+                      <ClientLogos ids={v.anchorClients} height={44} gapClass="gap-x-6 gap-y-3" />
                     </div>
                   </Reveal>
                 </div>

@@ -18,14 +18,14 @@ export function waLink(message: string): string {
 export const WA_MESSAGES = {
   es: {
     piloto:
-      "Hola Manuel, quiero mi piloto LINCE de 72 horas. Mi negocio es: ",
-    general: "Hola Manuel, vi lincesistemas.com y quiero platicar sobre un proyecto.",
-    nav: "Hola Manuel, me gustaría platicar sobre LINCE.",
+      "Hola Manuel, quiero platicar sobre un sistema para mi negocio. Mi negocio es: ",
+    general: "Hola Manuel, vi lincesistemas.com y quiero platicar sobre mi negocio.",
+    nav: "Hola Manuel, me gustaría platicar sobre un sistema para mi negocio.",
   },
   en: {
     piloto:
-      "Hi Manuel, I want the 72-hour LINCE pilot. My business is: ",
-    general: "Hi Manuel, I found lincesistemas.com and want to talk about a project.",
-    nav: "Hi Manuel, I'd like to talk about LINCE.",
+      "Hi Manuel, I'd like to talk about a system for my business. My business is: ",
+    general: "Hi Manuel, I found lincesistemas.com and want to talk about my business.",
+    nav: "Hi Manuel, I'd like to talk about a system for my business.",
   },
 } as const;

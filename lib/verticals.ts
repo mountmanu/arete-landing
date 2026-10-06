@@ -1,3 +1,5 @@
+import type { ClientId } from "./clients";
+
 export type VerticalSlug =
   | "notarial"
   | "hospital"
@@ -11,7 +13,7 @@ export interface Vertical {
   promise: string;
   description: string;
   packIncludes: string[];
-  anchorClients: string[];
+  anchorClients: ClientId[];
   caseSlug?: string;
 }
 
@@ -19,81 +21,81 @@ export const verticals: Vertical[] = [
   {
     slug: "notarial",
     name: "Notarías",
-    promise: "Automatización notarial sin sacrificar formalidad jurídica.",
+    promise: "Que la escritura salga en horas, con el rigor de siempre.",
     description:
-      "Empacamos los flujos críticos del despacho — escrituras, poderes, sucesiones, fe de hechos — con RAG entrenado en la legislación local, agentes redactores y conexión directa al sistema de gestión interno. El equipo trabaja más rápido sin perder el rigor que la profesión exige.",
+      "Una notaría trabaja con un cuidado que el software genérico no entiende. Armo herramientas que acompañan al equipo paso a paso: la ley del estado a la mano, los antecedentes del cliente en pantalla y un historial de cada decisión. El despacho sale más rápido sin aflojar la formalidad.",
     packIncludes: [
-      "RAG sobre legislación notarial estatal",
-      "Generador asistido de minutas y escrituras",
-      "Cotejo automático de identidades y representaciones",
-      "Agente de seguimiento de trámites y vigencias",
-      "Bitácora cronológica auditable",
+      "Redacción asistida de minutas y escrituras, con la legislación del estado a la mano",
+      "Expediente del cliente con sus antecedentes en segundos",
+      "Revisión automática de identidades y poderes",
+      "Seguimiento de trámites y vencimientos",
+      "Historial completo de cada escritura, listo para auditar",
     ],
-    anchorClients: ["Notaría Pública 45", "Notaría Pública 273"],
+    anchorClients: ["notaria-45", "notaria-273"],
     caseSlug: "notaria-45-273",
   },
   {
     slug: "hospital",
     name: "Hospitales",
-    promise: "Pricing, cobranza y operaciones clínicas con visión unificada.",
+    promise: "Saber cada día qué deja dinero y por dónde se está yendo.",
     description:
-      "Pack hospitalario con foco en el ciclo de ingresos: pricing dinámico por convenio, conciliación de pagos, ruteo de pacientes y panel directivo en tiempo real. Recuperas margen que estaba filtrándose en convenios y reduces el cierre mensual de semanas a horas.",
+      "Con decenas de convenios, cada uno con su tabulador y sus excepciones, el margen se escapa por rendijas que nadie ve a tiempo. Pongo los tabuladores, la cobranza y los indicadores de la dirección en un solo lugar, para que las decisiones se tomen con datos del día y no con el reporte del mes pasado.",
     packIncludes: [
-      "Pricing dinámico por convenio y aseguradora",
-      "Conciliación automática facturación-pago",
-      "Panel directivo en tiempo real (ocupación, rentabilidad, mix)",
-      "Agente de cobranza preventiva",
-      "Detección de fugas y leakage en cobros",
+      "Tabuladores de cada convenio y aseguradora, ordenados y vigentes",
+      "Lo facturado contra lo cobrado, cuadrado solo",
+      "Panel de dirección: ocupación, rentabilidad por servicio y quién paga qué",
+      "Avisos de cobranza antes de que una cuenta se atrase",
+      "Detección de cobros que se están quedando cortos",
     ],
-    anchorClients: ["Hospital Victoria La Salle"],
+    anchorClients: ["hospital-la-salle"],
     caseSlug: "hospital-pricing",
   },
   {
     slug: "restaurant",
     name: "Restaurantes",
-    promise: "BI operacional para cadenas que crecen sin perder margen.",
+    promise: "Ver todas las sucursales como si estuvieras parado en cada una.",
     description:
-      "Para cadenas y franquicias: control de costo teórico vs real, mermas detectadas el mismo día, productividad por turno, panel regional con drilldown a sucursal. Tu director regional sabe qué unidad necesita visita hoy — no en tres semanas.",
+      "Cuando una cadena crece, los reportes llegan tarde, y cuando una sucursal pierde margen te enteras semanas después. Conecto el punto de venta, el inventario y la nómina en un tablero que te dice hoy qué sucursal necesita atención.",
     packIncludes: [
-      "Costo teórico vs real, por receta y unidad",
-      "Análisis de mermas y desviaciones",
-      "Productividad por turno y empleado",
-      "Panel regional con drilldown a sucursal",
-      "Alertas de variación crítica vía agentes",
+      "Costo de cada receta: lo que debería costar contra lo que cuesta",
+      "Mermas detectadas el mismo día",
+      "Productividad por turno y por persona",
+      "Tablero regional con detalle por sucursal",
+      "Avisos cuando algo se sale de rango",
     ],
-    anchorClients: ["Doña Tota"],
+    anchorClients: ["dona-tota"],
     caseSlug: "dona-tota-bi",
   },
   {
     slug: "community",
     name: "Comunidades",
-    promise: "BI para administraciones de fraccionamientos y condominios.",
+    promise: "Que el comité administre con información y no con el chat.",
     description:
-      "Visibilidad completa para administradores y comités: cuotas, morosidad, reservas de áreas comunes, incidencias de seguridad, mantenimiento. Una plataforma reemplaza cuatro herramientas y un grupo de WhatsApp.",
+      "Un fraccionamiento se administra entre un grupo de WhatsApp, una contadora y la memoria del administrador. Les doy una sola plataforma: cuotas, morosidad, reservas de áreas comunes, incidencias de seguridad y mantenimiento, y cada quien ve lo que le toca.",
     packIncludes: [
-      "Conciliación de cuotas y morosidad",
-      "Reservas y uso de áreas comunes",
-      "Bitácora de seguridad e incidencias",
-      "Mantenimiento preventivo programado",
-      "Panel para comité con accesos por rol",
+      "Cuotas cobradas y pendientes, cuadradas con sus facturas",
+      "Morosidad clara, por vecino y por antigüedad",
+      "Reservas de áreas comunes con calendario",
+      "Bitácora de seguridad e incidencias por turno",
+      "Mantenimiento programado",
     ],
-    anchorClients: ["Estacionamiento + Car Wash"],
+    anchorClients: ["park-wash"],
     caseSlug: "comunidad-bi",
   },
   {
     slug: "professional",
     name: "Servicios profesionales",
-    promise: "Firmas y consultorías que cobran por hora, operan por proyecto.",
+    promise: "Que el tiempo que trabajas sea el tiempo que cobras.",
     description:
-      "Job tracking con captura mínima, margen real por proyecto y por consultor, pipeline conectado al delivery, asistente personal de productividad. Recuperas horas facturables y ves los problemas antes de que se conviertan en pérdidas.",
+      "Para despachos, consultores y firmas que cobran por hora o por proyecto. Registrar el tiempo es lo que más se posterga, y por eso el margen real se conoce cuando ya se perdió. Hago que registrarlo sea casi automático y que cada proyecto avise a tiempo si está dejando dinero o no.",
     packIncludes: [
-      "Job tracker con captura asistida",
-      "Margen real por proyecto y consultor",
-      "Pipeline comercial conectado al delivery",
-      "Reportes editoriales para cliente final",
-      "Asistente personal de productividad",
+      "Registro de tiempo casi sin esfuerzo",
+      "Margen real por proyecto y por persona",
+      "Prospectos y proyectos en curso en un mismo lugar",
+      "Reportes limpios para entregar al cliente",
+      "Un asistente que te prepara el día",
     ],
-    anchorClients: ["Laura Zanuna", "Job Tracker BI"],
+    anchorClients: ["laura-zanuna", "job-tracker"],
     caseSlug: "job-tracker-bi",
   },
 ];

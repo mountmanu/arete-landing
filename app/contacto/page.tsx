@@ -6,7 +6,7 @@ import { waLink, WA_MESSAGES } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Conversemos sobre tu industria. LINCE Sistemas — software AI-nativo para PyMEs mexicanas.",
+    "Platiquemos de tu negocio. Media hora, sin costo, y te contesto yo.",
 };
 
 export default function ContactoPage() {
@@ -22,13 +22,13 @@ export default function ContactoPage() {
               className="text-balance max-w-4xl"
               style={{ fontSize: "var(--text-display-2xl)" }}
             >
-              30 minutos bastan para saber si encajamos.
+              Media hora para saber si te puedo ayudar.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-2xl text-[var(--text-body-lg)] text-ink leading-relaxed">
-              Cuéntame qué problema operativo tienes y de qué industria
-              vienes. No cobro la primera conversación.
+              Cuéntame qué se te está complicando en el negocio y a qué te
+              dedicas. La primera plática no cuesta.
             </p>
           </Reveal>
         </div>
@@ -78,20 +78,20 @@ export default function ContactoPage() {
                     +52 834 196 3524
                   </a>
                   <p className="mt-3 text-[var(--text-body)] text-mute leading-relaxed">
-                    Es la vía más rápida. Escribe y te contesto yo, no un
-                    equipo de ventas.
+                    Es la vía más rápida. Escribes y te contesto yo.
                   </p>
                 </div>
               </Reveal>
 
               <Reveal delay={0.2}>
                 <div className="pt-12 border-t border-line">
-                  <p className="eyebrow mb-4">Dónde opero</p>
+                  <p className="eyebrow mb-4">Dónde estoy</p>
                   <p className="font-display text-xl">
                     LINCE Sistemas
                   </p>
                   <p className="mt-3 text-[var(--text-body)] text-mute leading-relaxed">
-                    Ciudad Victoria, Tamaulipas, México
+                    Ciudad Victoria, Tamaulipas. Trabajo con negocios de todo
+                    México, en persona o a distancia.
                     <br />
                     Atención de lunes a viernes
                   </p>
@@ -101,10 +101,9 @@ export default function ContactoPage() {
               <Reveal delay={0.25}>
                 <div className="bg-soft p-6 border-l-2 border-ink">
                   <p className="text-sm leading-relaxed text-ink">
-                    <strong className="font-medium">Tip:</strong> Si tu
-                    industria no aparece en la lista, escríbelo en el
-                    mensaje. Cada nueva industria es candidata a convertirse
-                    en pack.
+                    Si tu giro no está en la lista, no importa. Escríbelo
+                    en el mensaje; buena parte de lo que necesitas seguramente
+                    ya lo construí para otro negocio.
                   </p>
                 </div>
               </Reveal>

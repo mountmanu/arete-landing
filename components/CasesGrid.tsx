@@ -63,7 +63,7 @@ export function CasesGrid({ cases }: { cases: CaseStudy[] }) {
 
       {filtered.length === 0 ? (
         <p className="text-center py-20 text-mute">
-          Aún no hay casos publicados en esta vertical.
+          Todavía no hay casos en este giro.
         </p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

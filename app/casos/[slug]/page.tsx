@@ -8,6 +8,7 @@ import {
 } from "@/lib/case-studies";
 import { Reveal } from "@/components/Reveal";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { ClientLogos } from "@/components/ClientLogo";
 
 export function generateStaticParams() {
   return caseStudies.map((c) => ({ slug: c.slug }));
@@ -65,7 +66,7 @@ export default async function CaseStudyPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <header className="py-[var(--spacing-section)] pt-32 border-b border-line">
+      <header className="py-[var(--spacing-section)] pt-12 md:pt-16 border-b border-line">
         <div className="container-editorial">
           <Reveal>
             <Link
@@ -96,9 +97,10 @@ export default async function CaseStudyPage({
           </Reveal>
 
           <Reveal delay={0.1}>
-            <p className="font-display italic text-mute text-2xl mb-4">
-              {c.client}
-            </p>
+            <div className="mb-8">
+              <ClientLogos ids={c.clients} height={72} mono={false} gapClass="gap-x-8 gap-y-4" />
+              <span className="sr-only">{c.client}</span>
+            </div>
           </Reveal>
 
           <Reveal delay={0.15}>
@@ -121,6 +123,19 @@ export default async function CaseStudyPage({
               Alcance · {c.scope}
             </p>
           </Reveal>
+
+          {c.demo && (
+            <Reveal delay={0.3}>
+              <a
+                href={c.demo.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-10 inline-flex items-center gap-2 bg-ink text-paper px-6 py-3 text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium hover:opacity-85 transition"
+              >
+                Probar el demo
+              </a>
+            </Reveal>
+          )}
         </div>
       </header>
 
@@ -134,7 +149,7 @@ export default async function CaseStudyPage({
               className="text-balance mb-10"
               style={{ fontSize: "var(--text-display-md)" }}
             >
-              ¿Qué bloqueaba a la operación?
+              Qué estaba trabando al negocio.
             </h2>
           </Reveal>
           <div className="prose-editorial">
@@ -150,14 +165,14 @@ export default async function CaseStudyPage({
       <section className="py-[var(--spacing-section)] bg-soft rule-top rule-bottom">
         <div className="container-narrow">
           <Reveal>
-            <p className="eyebrow mb-6">La solución</p>
+            <p className="eyebrow mb-6">Lo que hicimos</p>
           </Reveal>
           <Reveal delay={0.05}>
             <h2
               className="text-balance mb-10"
               style={{ fontSize: "var(--text-display-md)" }}
             >
-              Cómo lo armamos sobre el núcleo.
+              Qué construimos y qué cambió en el día a día.
             </h2>
           </Reveal>
           <div className="prose-editorial mb-12">
@@ -170,7 +185,7 @@ export default async function CaseStudyPage({
 
           <Reveal delay={0.2}>
             <div className="mt-16 pt-10 border-t border-line">
-              <p className="eyebrow mb-6">Lo que se añadió al núcleo</p>
+              <p className="eyebrow mb-6">Lo que el siguiente negocio hereda de este caso</p>
               <ul className="space-y-3">
                 {c.reuse.map((r, i) => (
                   <li
@@ -190,7 +205,7 @@ export default async function CaseStudyPage({
       <section className="py-[var(--spacing-section)]">
         <div className="container-editorial">
           <Reveal>
-            <p className="eyebrow mb-6 text-center">Impacto</p>
+            <p className="eyebrow mb-6 text-center">Qué cambió</p>
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-4xl mx-auto">
             {c.impact.map((i, idx) => (
@@ -215,7 +230,7 @@ export default async function CaseStudyPage({
       <section className="py-[var(--spacing-block)]">
         <div className="container-narrow">
           <Reveal>
-            <p className="eyebrow mb-6">Stack</p>
+            <p className="eyebrow mb-6">Con qué está hecho</p>
           </Reveal>
           <Reveal delay={0.05}>
             <ul className="flex flex-wrap gap-2">
@@ -237,9 +252,8 @@ export default async function CaseStudyPage({
           {prev ? (
             <Link href={`/casos/${prev.slug}`} className="group max-w-sm">
               <p className="eyebrow mb-3">← Caso anterior</p>
-              <p className="font-display text-xl group-hover:text-mute transition-colors">
-                {prev.client}
-              </p>
+              <ClientLogos ids={prev.clients} height={36} gapClass="gap-x-4 gap-y-2" />
+              <span className="sr-only">{prev.client}</span>
             </Link>
           ) : (
             <span />
@@ -251,9 +265,8 @@ export default async function CaseStudyPage({
               className="group max-w-sm md:text-right"
             >
               <p className="eyebrow mb-3">Caso siguiente →</p>
-              <p className="font-display text-xl group-hover:text-mute transition-colors">
-                {next.client}
-              </p>
+              <ClientLogos ids={next.clients} height={36} gapClass="gap-x-4 gap-y-2 md:justify-end" />
+              <span className="sr-only">{next.client}</span>
             </Link>
           ) : (
             <span />

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "LINCE — Sistemas que operan tu negocio";
+export const alt = "LINCE Sistemas — Un sistema hecho para tu negocio";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -40,7 +40,7 @@ export default async function OpengraphImage() {
               maxWidth: 1000,
             }}
           >
-            Sistemas que operan tu negocio.
+            Un sistema hecho para tu negocio,
           </div>
           <div
             style={{
@@ -51,7 +51,7 @@ export default async function OpengraphImage() {
               fontStyle: "italic",
             }}
           >
-            Construido sobre lo que ya funciona.
+            no tu negocio adaptado a un sistema.
           </div>
         </div>
 

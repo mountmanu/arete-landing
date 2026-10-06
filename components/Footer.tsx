@@ -62,14 +62,14 @@ export function Footer() {
               ))}
             </p>
             <p className="mt-6 max-w-md text-paper/70 leading-relaxed">
-              Software AI-nativo construido sobre un núcleo reusable y
-              empacado por industria. Cada proyecto compone valor sobre el
-              anterior.
+              Hago sistemas a la medida para negocios que ya funcionan y
+              quieren ver, controlar y crecer sin perder el piso. Los
+              construyo, los entrego funcionando y me quedo.
             </p>
             <p className="mt-6 text-paper/55 text-sm">
               LINCE Sistemas
               <br />
-              Operación remota desde México
+              Ciudad Victoria, Tamaulipas. Trabajo con negocios de todo México.
             </p>
           </div>
 
@@ -101,7 +101,7 @@ export function Footer() {
             &copy; {year} LINCE Sistemas — Todos los derechos
             reservados.
           </p>
-          <p>Construido con cuidado en México.</p>
+          <p>Hecho en México.</p>
         </div>
       </div>
     </footer>

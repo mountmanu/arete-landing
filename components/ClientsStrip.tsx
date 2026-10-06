@@ -1,20 +1,22 @@
 "use client";
 
 import { Reveal } from "./Reveal";
+import { ClientLogo } from "./ClientLogo";
 import { useLang } from "@/contexts/LangContext";
+import type { ClientId } from "@/lib/clients";
 
-const anchors = [
-  "Notaría Pública 45",
-  "Notaría Pública 273",
-  "Hospital Victoria La Salle",
-  "Doña Tota",
-  "Estacionamiento + Car Wash",
-  "Laura Zanuna",
+const anchors: ClientId[] = [
+  "notaria-45",
+  "notaria-273",
+  "hospital-la-salle",
+  "dona-tota",
+  "park-wash",
+  "laura-zanuna",
 ];
 
 const eyebrow = {
-  es: "En producción",
-  en: "In production",
+  es: "Ya trabajan con sistemas míos",
+  en: "Already running on my systems",
 };
 
 export function ClientsStrip() {
@@ -24,16 +26,13 @@ export function ClientsStrip() {
     <section className="py-[var(--spacing-block)] rule-top rule-bottom">
       <div className="container-editorial">
         <Reveal>
-          <p className="eyebrow text-center mb-6">{eyebrow[lang]}</p>
+          <p className="eyebrow text-center mb-8">{eyebrow[lang]}</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 md:gap-x-16">
-            {anchors.map((name) => (
-              <li
-                key={name}
-                className="font-display text-lg md:text-xl text-mute hover:text-ink transition-colors duration-300"
-              >
-                {name}
+          <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-14">
+            {anchors.map((id) => (
+              <li key={id} className="flex items-center">
+                <ClientLogo id={id} height={44} />
               </li>
             ))}
           </ul>
