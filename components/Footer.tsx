@@ -34,13 +34,14 @@ const sitemap = [
   },
 ];
 
-// What the name stands for. The initials carry the acronym, so they read brighter.
-const acronym: [string, string][] = [
-  ["L", "ógica e "],
-  ["I", "nteligencia en "],
-  ["N", "úcleos con "],
-  ["C", "apacidades "],
-  ["E", "mpresariales"],
+// Qué significa el nombre. Se muestra como acróstico: las iniciales, una por
+// línea, forman LINCE en vertical; los conectores van en chico y apagados.
+const acronym: { initial: string; rest: string; link?: string }[] = [
+  { initial: "L", rest: "ógica", link: "e" },
+  { initial: "I", rest: "nteligencia", link: "en" },
+  { initial: "N", rest: "úcleos", link: "con" },
+  { initial: "C", rest: "apacidades" },
+  { initial: "E", rest: "mpresariales" },
 ];
 
 export function Footer() {
@@ -53,15 +54,26 @@ export function Footer() {
             <Link href="/" aria-label="LINCE — Inicio" className="inline-block">
               <LogoFull tone="light" className="h-16 w-auto" />
             </Link>
-            <p className="mt-5 max-w-md text-paper/60 text-[15px] leading-relaxed">
-              {acronym.map(([initial, rest]) => (
-                <span key={initial}>
-                  <span className="text-paper font-semibold">{initial}</span>
-                  {rest}
-                </span>
+            <ul
+              className="mt-8 font-display leading-[1.15]"
+              aria-label="Lógica e Inteligencia en Núcleos con Capacidades Empresariales"
+            >
+              {acronym.map(({ initial, rest, link }) => (
+                <li key={initial} className="whitespace-nowrap">
+                  <span className="text-[2.25rem] text-paper">{initial}</span>
+                  <span className="text-[1.5rem] text-paper/80">{rest}</span>
+                  {link && (
+                    <>
+                      {" "}
+                      <span className="ml-2 font-body text-[11px] tracking-[0.2em] uppercase text-paper/40 align-middle">
+                        {link}
+                      </span>
+                    </>
+                  )}
+                </li>
               ))}
-            </p>
-            <p className="mt-6 max-w-md text-paper/70 leading-relaxed">
+            </ul>
+            <p className="mt-8 max-w-md text-paper/70 leading-relaxed">
               Hago sistemas a la medida para negocios que ya funcionan y
               quieren ver, controlar y crecer sin perder el piso. Los
               construyo, los entrego funcionando y me quedo.
