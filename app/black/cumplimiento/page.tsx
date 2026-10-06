@@ -45,7 +45,7 @@ const obligations = [
 export default function CumplimientoPage() {
   return (
     <>
-      <section className="py-[var(--spacing-section)] pt-32">
+      <section className="py-[var(--spacing-section)] pt-12 md:pt-16">
         <div className="container-editorial">
           <Reveal>
             <p className="eyebrow text-gold mb-6">Suite de Cumplimiento PLD</p>

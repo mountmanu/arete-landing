@@ -39,7 +39,7 @@ const methodology = [
 export default function NosotrosPage() {
   return (
     <>
-      <section className="py-[var(--spacing-section)] pt-32">
+      <section className="py-[var(--spacing-section)] pt-12 md:pt-16">
         <div className="container-editorial">
           <Reveal>
             <p className="eyebrow mb-6">Cómo trabajo</p>

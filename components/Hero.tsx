@@ -41,9 +41,9 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="container-editorial pt-20 md:pt-32 pb-24 md:pb-32 relative">
+      <div className="container-editorial pt-10 md:pt-14 pb-16 md:pb-20 relative">
         <Reveal>
-          <div className="flex items-center gap-3 mb-10">
+          <div className="flex items-center gap-3 mb-6">
             <span className="block w-12 h-px bg-ink" />
             <span className="eyebrow">{t.eyebrow}</span>
           </div>
@@ -66,13 +66,13 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.2}>
-          <p className="mt-10 max-w-2xl text-[var(--text-body-lg)] text-pretty text-ink leading-relaxed">
+          <p className="mt-8 max-w-2xl text-[var(--text-body-lg)] text-pretty text-ink leading-relaxed">
             {t.body}
           </p>
         </Reveal>
 
         <Reveal delay={0.3}>
-          <div className="mt-12 flex flex-wrap items-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link href="/casos" className="btn-primary">
               {t.cta1}
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -92,7 +92,7 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.5}>
-          <div className="mt-24 md:mt-32 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pt-10 rule-top">
+          <div className="mt-14 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pt-8 rule-top">
             {t.stats.map((stat) => (
               <Stat key={stat.label} label={stat.label} value={stat.value} />
             ))}

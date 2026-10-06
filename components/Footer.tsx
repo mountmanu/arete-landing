@@ -29,40 +29,51 @@ const sitemap = [
     items: [
       { href: "mailto:manuel@lincesistemas.com", label: "manuel@lincesistemas.com" },
       { href: "/contacto", label: "Agendar 30 min" },
-    ],
-  },
-  {
-    title: "LINCE",
-    items: [
-      { href: "/nosotros", label: "Cómo trabajo" },
       { href: "https://www.linkedin.com/in/manuel-flores-90653060/", label: "LinkedIn" },
     ],
   },
 ];
 
+// What the name stands for. The initials carry the acronym, so they read brighter.
+const acronym: [string, string][] = [
+  ["L", "ógica e "],
+  ["I", "nteligencia en "],
+  ["N", "úcleos con "],
+  ["C", "apacidades "],
+  ["E", "mpresariales"],
+];
+
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-ink text-paper mt-24">
-      <div className="container-editorial py-20">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
+    <footer className="bg-ink text-paper">
+      <div className="container-editorial py-14">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
           <div className="md:col-span-5">
             <Link href="/" aria-label="LINCE — Inicio" className="inline-block">
-              <LogoFull tone="light" className="h-12 w-auto" />
+              <LogoFull tone="light" className="h-16 w-auto" />
             </Link>
-            <p className="mt-8 max-w-md text-paper/70 leading-relaxed">
+            <p className="mt-5 max-w-md text-paper/60 text-[15px] leading-relaxed">
+              {acronym.map(([initial, rest]) => (
+                <span key={initial}>
+                  <span className="text-paper font-semibold">{initial}</span>
+                  {rest}
+                </span>
+              ))}
+            </p>
+            <p className="mt-6 max-w-md text-paper/70 leading-relaxed">
               Software AI-nativo construido sobre un núcleo reusable y
               empacado por industria. Cada proyecto compone valor sobre el
               anterior.
             </p>
-            <p className="mt-8 text-paper/55 text-sm">
+            <p className="mt-6 text-paper/55 text-sm">
               LINCE Sistemas
               <br />
               Operación remota desde México
             </p>
           </div>
 
-          <div className="md:col-span-7 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="md:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
             {sitemap.map((column) => (
               <div key={column.title}>
                 <h3 className="eyebrow text-paper/60 mb-5">{column.title}</h3>
@@ -71,7 +82,7 @@ export function Footer() {
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-paper/85 hover:text-paper transition-colors text-[15px]"
+                        className="text-paper/85 hover:text-paper transition-colors text-[15px] [overflow-wrap:anywhere]"
                       >
                         {item.label}
                       </Link>
@@ -83,7 +94,7 @@ export function Footer() {
           </div>
         </div>
 
-        <hr className="my-12 border-paper/10" />
+        <hr className="my-8 border-paper/10" />
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-paper/55">
           <p>

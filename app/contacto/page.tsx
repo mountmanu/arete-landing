@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ContactoPage() {
   return (
     <>
-      <section className="py-[var(--spacing-section)] pt-32">
+      <section className="py-[var(--spacing-section)] pt-12 md:pt-16">
         <div className="container-editorial">
           <Reveal>
             <p className="eyebrow mb-6">Contacto</p>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="py-[var(--spacing-section)] pt-32 min-h-[60vh] flex items-center">
+    <section className="py-[var(--spacing-section)] pt-12 md:pt-16 min-h-[60vh] flex items-center">
       <div className="container-narrow text-center">
         <p className="eyebrow mb-6">404</p>
         <h1

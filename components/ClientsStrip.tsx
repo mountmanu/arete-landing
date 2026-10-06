@@ -24,7 +24,7 @@ export function ClientsStrip() {
     <section className="py-[var(--spacing-block)] rule-top rule-bottom">
       <div className="container-editorial">
         <Reveal>
-          <p className="eyebrow text-center mb-10">{eyebrow[lang]}</p>
+          <p className="eyebrow text-center mb-6">{eyebrow[lang]}</p>
         </Reveal>
         <Reveal delay={0.1}>
           <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 md:gap-x-16">

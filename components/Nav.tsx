@@ -36,7 +36,7 @@ export function Nav() {
     >
       <div className="container-editorial flex items-center justify-between h-20">
         <Link href="/" aria-label="LINCE — Inicio" className="flex items-center">
-          <LogoFull className="h-11 w-auto" />
+          <LogoFull className="h-14 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

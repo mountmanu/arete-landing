@@ -7,7 +7,7 @@ export function CasesPreview() {
   return (
     <section className="py-[var(--spacing-section)] bg-soft rule-top rule-bottom">
       <div className="container-editorial">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div className="max-w-2xl">
             <Reveal>
               <p className="eyebrow mb-6">Casos</p>
