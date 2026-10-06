@@ -40,7 +40,7 @@ export function LogoFull({
       )}
       <text
         x={x}
-        y="67"
+        y="54"
         style={{ fontFamily: DISPLAY }}
         fontSize="52"
         fontWeight="400"
@@ -49,6 +49,18 @@ export function LogoFull({
         fill={ink}
       >
         LINCE
+      </text>
+      <text
+        x={x}
+        y="81"
+        style={{ fontFamily: DISPLAY }}
+        fontSize="16"
+        fontWeight="500"
+        textLength="176"
+        lengthAdjust="spacing"
+        fill={ink}
+      >
+        SISTEMAS
       </text>
     </svg>
   );
@@ -73,7 +85,7 @@ export function LogoWordmark({
     >
       <text
         x="0"
-        y="44"
+        y="35"
         style={{ fontFamily: DISPLAY }}
         fontSize="40"
         fontWeight="400"
@@ -82,6 +94,18 @@ export function LogoWordmark({
         fill={ink}
       >
         LINCE
+      </text>
+      <text
+        x="0"
+        y="55"
+        style={{ fontFamily: DISPLAY }}
+        fontSize="12"
+        fontWeight="500"
+        textLength="136"
+        lengthAdjust="spacing"
+        fill={ink}
+      >
+        SISTEMAS
       </text>
     </svg>
   );
