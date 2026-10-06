@@ -21,16 +21,16 @@ const bodyFont = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://arete.business"),
+  metadataBase: new URL("https://lincesistemas.com"),
   title: {
-    default: "Areté — Software AI-nativo que compone valor",
-    template: "%s · Areté",
+    default: "LINCE Sistemas — Software AI-nativo que compone valor",
+    template: "%s · LINCE Sistemas",
   },
   description:
-    "Areté Soluciones — consultoría mexicana de software AI-nativo, fundada y dirigida por Manuel Flores. 6 sistemas en producción en 5 industrias reguladas: notarías, hospitales, restaurantes, comunidades y servicios profesionales.",
+    "LINCE Sistemas — consultoría mexicana de software AI-nativo, fundada y dirigida por Manuel Flores. 6 sistemas en producción en 5 industrias reguladas: notarías, hospitales, restaurantes, comunidades y servicios profesionales.",
   keywords: [
-    "Areté",
-    "Areté Soluciones",
+    "LINCE",
+    "LINCE Sistemas",
     "consultoría AI México",
     "software AI-nativo",
     "automatización notarial",
@@ -43,21 +43,21 @@ export const metadata: Metadata = {
     "sistemas de inventario y ERP",
     "TypeScript Rust Claude API",
   ],
-  authors: [{ name: "Areté Soluciones" }],
-  creator: "Areté Soluciones",
-  publisher: "Areté Soluciones",
+  authors: [{ name: "LINCE Sistemas" }],
+  creator: "LINCE Sistemas",
+  publisher: "LINCE Sistemas",
   openGraph: {
     type: "website",
     locale: "es_MX",
-    url: "https://arete.business",
-    siteName: "Areté",
-    title: "Areté — Software AI-nativo que compone valor",
+    url: "https://lincesistemas.com",
+    siteName: "LINCE Sistemas",
+    title: "LINCE Sistemas — Software AI-nativo que compone valor",
     description:
       "Núcleo reusable + packs verticales. Cada entrega compone valor sobre la anterior.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Areté — Software AI-nativo que compone valor",
+    title: "LINCE Sistemas — Software AI-nativo que compone valor",
     description: "Núcleo reusable + packs verticales para SMBs mexicanas.",
   },
   robots: {
@@ -65,7 +65,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "96x96" }],
+    apple: "/apple-touch-icon.png",
   },
 };
 

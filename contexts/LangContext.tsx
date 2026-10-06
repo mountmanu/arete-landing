@@ -19,7 +19,7 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     try {
-      const stored = localStorage.getItem("arete-lang") as Lang | null;
+      const stored = localStorage.getItem("lince-lang") as Lang | null;
       if (stored === "en" || stored === "es") setLang(stored);
     } catch {
       // localStorage unavailable — stay on default
@@ -30,7 +30,7 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
     const next: Lang = lang === "es" ? "en" : "es";
     setLang(next);
     try {
-      localStorage.setItem("arete-lang", next);
+      localStorage.setItem("lince-lang", next);
     } catch {}
   };
 

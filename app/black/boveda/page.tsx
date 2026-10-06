@@ -5,14 +5,14 @@ import { ContactCTABlack } from "@/components/black/ContactCTABlack";
 export const metadata: Metadata = {
   title: "Bóveda — Módulo white-label para clientes top",
   description:
-    "Bóveda es el módulo opcional de Areté Black que entrega a sus clientes top una experiencia digital con la marca de su casa: certificado de procedencia, registro gemológico, tasación anual y recompra preferente.",
+    "Bóveda es el módulo opcional de LINCE Black que entrega a sus clientes top una experiencia digital con la marca de su casa: certificado de procedencia, registro gemológico, tasación anual y recompra preferente.",
 };
 
 const principles = [
   {
     number: "01",
     title: "Su marca, no la nuestra",
-    body: "Los clientes top descargan una aplicación con el nombre y la identidad de su casa: «Berger · Mi Bóveda», «Peyrelongue · Mi Bóveda», «Tane · Mi Bóveda». Areté Black es la infraestructura; usted es la marca.",
+    body: "Los clientes top descargan una aplicación con el nombre y la identidad de su casa: «Berger · Mi Bóveda», «Peyrelongue · Mi Bóveda», «Tane · Mi Bóveda». LINCE Black es la infraestructura; usted es la marca.",
   },
   {
     number: "02",
@@ -75,7 +75,7 @@ export default function BovedaPage() {
               El cumplimiento es la obligación. Bóveda es la oportunidad: un
               módulo opcional sobre la suite base que convierte la operación
               regulatoria en una capa de valor para sus clientes top — sin que
-              ellos sepan que la tecnología es Areté.
+              ellos sepan que la tecnología es LINCE.
             </p>
           </Reveal>
         </div>

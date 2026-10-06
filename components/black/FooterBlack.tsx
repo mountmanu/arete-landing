@@ -12,9 +12,9 @@ const sitemap = [
     ],
   },
   {
-    title: "Grupo Areté",
+    title: "Grupo LINCE",
     items: [
-      { href: "/", label: "Areté Soluciones" },
+      { href: "/", label: "LINCE Sistemas" },
       { href: "/verticales", label: "Otras industrias" },
       { href: "/nosotros", label: "Cómo trabajamos" },
       { href: "/casos", label: "Casos en producción" },
@@ -23,7 +23,7 @@ const sitemap = [
   {
     title: "Contacto",
     items: [
-      { href: "mailto:manuel@arete.business", label: "manuel@arete.business" },
+      { href: "mailto:manuel@lincesistemas.com", label: "manuel@lincesistemas.com" },
       { href: "/black/contacto", label: "Solicitar acceso" },
     ],
   },
@@ -38,18 +38,18 @@ export function FooterBlack() {
           <div className="md:col-span-5">
             <Link
               href="/black"
-              aria-label="Areté Black — Inicio"
+              aria-label="LINCE Black — Inicio"
               className="inline-block"
             >
-              <LogoBlack className="h-10 w-auto" />
+              <LogoBlack className="h-12 w-auto" />
             </Link>
             <p className="mt-8 max-w-md text-mute leading-relaxed">
               Suite de Cumplimiento PLD para casas de joyería, relojería,
               metales y piedras preciosas. Construida sobre la madurez
-              acumulada de Areté Soluciones.
+              acumulada de LINCE Sistemas.
             </p>
             <p className="mt-8 text-mute/80 text-sm">
-              Areté Soluciones
+              LINCE Sistemas
               <br />
               Operación remota desde México · Cobertura LATAM
             </p>
@@ -80,7 +80,7 @@ export function FooterBlack() {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-mute">
           <p>
-            &copy; {year} Areté Soluciones — Todos los derechos
+            &copy; {year} LINCE Sistemas — Todos los derechos
             reservados.
           </p>
           <p className="text-mute/70">

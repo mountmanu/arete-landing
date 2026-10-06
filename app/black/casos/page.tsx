@@ -6,7 +6,7 @@ import { ContactCTABlack } from "@/components/black/ContactCTABlack";
 export const metadata: Metadata = {
   title: "Casos",
   description:
-    "Areté Black inaugura su pack con cuentas ancla en 2026–2027. Mientras tanto, conozca los seis casos en producción del grupo Areté Soluciones.",
+    "LINCE Black inaugura su pack con cuentas ancla en 2026–2027. Mientras tanto, conozca los seis casos en producción del grupo LINCE Soluciones.",
 };
 
 export default function CasosBlackPage() {
@@ -27,9 +27,9 @@ export default function CasosBlackPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-3xl text-[var(--text-body-lg)] text-ink/85 leading-relaxed">
-              Areté Black inaugura su pack con cuentas ancla en 2026–2027. La
+              LINCE Black inaugura su pack con cuentas ancla en 2026–2027. La
               tecnología, sin embargo, no es nueva: opera ya en cinco
-              industrias hermanas dentro del grupo Areté Soluciones, con
+              industrias hermanas dentro del grupo LINCE Soluciones, con
               seis sistemas en producción.
             </p>
           </Reveal>
@@ -107,7 +107,7 @@ export default function CasosBlackPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-3xl text-[var(--text-body-lg)] text-ink/85 leading-relaxed">
-              El primer cliente de cada nueva vertical Areté co-financia la
+              El primer cliente de cada nueva vertical LINCE co-financia la
               creación del pack. Recibe un sistema a su medida con
               condiciones de design partner, exclusividad por sub-segmento
               durante el primer año, y derechos editoriales sobre el caso de

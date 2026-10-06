@@ -1,14 +1,14 @@
-const SITE_URL = "https://arete.business";
+const SITE_URL = "https://lincesistemas.com";
 
 export function OrganizationJsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
-    name: "Areté",
-    alternateName: "Areté Soluciones",
+    name: "LINCE Sistemas",
+    alternateName: "LINCE",
     url: SITE_URL,
-    logo: `${SITE_URL}/favicon.svg`,
+    logo: `${SITE_URL}/icon-512.png`,
     description:
       "Consultoría mexicana de software AI-nativo. Núcleo reusable + packs verticales para SMBs.",
     foundingLocation: {
@@ -24,7 +24,7 @@ export function OrganizationJsonLd() {
     contactPoint: [
       {
         "@type": "ContactPoint",
-        email: "manuel@arete.business",
+        email: "manuel@lincesistemas.com",
         contactType: "Sales",
         availableLanguage: ["Spanish"],
         areaServed: "MX",
@@ -54,7 +54,7 @@ export function WebSiteJsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: "Areté",
+    name: "LINCE Sistemas",
     url: SITE_URL,
     inLanguage: "es-MX",
     publisher: { "@id": `${SITE_URL}/#organization` },

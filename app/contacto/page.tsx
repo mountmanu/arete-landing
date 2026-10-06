@@ -6,7 +6,7 @@ import { waLink, WA_MESSAGES } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Conversemos sobre tu industria. Areté Soluciones — software AI-nativo para PyMEs mexicanas.",
+    "Conversemos sobre tu industria. LINCE Sistemas — software AI-nativo para PyMEs mexicanas.",
 };
 
 export default function ContactoPage() {
@@ -58,10 +58,10 @@ export default function ContactoPage() {
                 <div>
                   <p className="eyebrow mb-4">Correo directo</p>
                   <a
-                    href="mailto:manuel@arete.business"
+                    href="mailto:manuel@lincesistemas.com"
                     className="font-display text-3xl link-underline text-ink"
                   >
-                    manuel@arete.business
+                    manuel@lincesistemas.com
                   </a>
                 </div>
               </Reveal>
@@ -88,7 +88,7 @@ export default function ContactoPage() {
                 <div className="pt-12 border-t border-line">
                   <p className="eyebrow mb-4">Dónde opero</p>
                   <p className="font-display text-xl">
-                    Areté Soluciones
+                    LINCE Sistemas
                   </p>
                   <p className="mt-3 text-[var(--text-body)] text-mute leading-relaxed">
                     Ciudad Victoria, Tamaulipas, México

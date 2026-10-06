@@ -11,7 +11,7 @@
   --color-line: #E5E5E5;
   --color-line-soft: #EFEFEF;
 
-  /* Areté Black — luxury palette tokens (always available) */
+  /* LINCE Black — luxury palette tokens (always available) */
   --color-onyx: #0A0908;
   --color-onyx-soft: #141210;
   --color-bone: #F5F1E8;
@@ -50,7 +50,7 @@
     text-rendering: optimizeLegibility;
   }
 
-  /* Areté Black — invert the canonical tokens for everything under /black */
+  /* LINCE Black — invert the canonical tokens for everything under /black */
   [data-theme="black"] {
     --color-ink: #F5F1E8;
     --color-ink-soft: #E8E0CC;
@@ -212,7 +212,7 @@
 }
 
 @layer components {
-  /* Areté Black — accent treatments */
+  /* LINCE Black — accent treatments */
   .text-gold {
     color: var(--color-gold);
   }
@@ -266,7 +266,7 @@
 }
 
 /* ============================================================
-   Areté Black — Tema luxury para /black/*
+   LINCE Black — Tema luxury para /black/*
    Override de tokens scoped a [data-theme="black"]. Aplicado al
    <html> por ThemeApplier client component según pathname.
    Toda la UI existente (btn-primary, btn-secondary, eyebrow,

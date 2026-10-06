@@ -7,7 +7,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Industrias",
   description:
-    "Cinco packs verticales construidos sobre el núcleo Areté: notarial, hospital, restaurantes, comunidades y servicios profesionales.",
+    "Cinco packs verticales construidos sobre el núcleo LINCE: notarial, hospital, restaurantes, comunidades y servicios profesionales.",
 };
 
 export default function VerticalesPage() {
@@ -29,7 +29,7 @@ export default function VerticalesPage() {
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-2xl text-[var(--text-body-lg)] text-ink leading-relaxed">
               Cada industria es un pack de capacidades empacadas sobre el
-              núcleo Areté. Lo que un cliente paga por construir, el siguiente
+              núcleo LINCE. Lo que un cliente paga por construir, el siguiente
               recibe en una fracción del tiempo.
             </p>
           </Reveal>

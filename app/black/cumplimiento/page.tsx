@@ -6,7 +6,7 @@ import { ContactCTABlack } from "@/components/black/ContactCTABlack";
 export const metadata: Metadata = {
   title: "Suite de Cumplimiento PLD",
   description:
-    "Detalle de la Suite de Cumplimiento PLD de Areté Black: inteligencia regulatoria, identificación de cliente, agente de avisos al SPPLD, bitácora a 10 años, panel multi-sucursal y capacitación anual.",
+    "Detalle de la Suite de Cumplimiento PLD de LINCE Black: inteligencia regulatoria, identificación de cliente, agente de avisos al SPPLD, bitácora a 10 años, panel multi-sucursal y capacitación anual.",
 };
 
 const obligations = [

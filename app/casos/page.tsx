@@ -28,7 +28,7 @@ export default function CasosPage() {
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-2xl text-[var(--text-body-lg)] text-ink leading-relaxed">
               Cada caso describe el problema operativo, la solución que armamos
-              sobre el núcleo Areté, y los componentes que se quedaron
+              sobre el núcleo LINCE, y los componentes que se quedaron
               disponibles para el siguiente cliente.
             </p>
           </Reveal>

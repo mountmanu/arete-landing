@@ -33,10 +33,10 @@ export function NavBlack() {
       <div className="container-editorial flex items-center justify-between h-20">
         <Link
           href="/black"
-          aria-label="Areté Black — Inicio"
+          aria-label="LINCE Black — Inicio"
           className="flex items-center"
         >
-          <LogoBlack className="h-9 w-auto" />
+          <LogoBlack className="h-11 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

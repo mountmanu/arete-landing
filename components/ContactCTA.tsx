@@ -63,8 +63,8 @@ export function ContactCTA() {
             <Link href="/contacto" className="btn-secondary">
               {t.cta2}
             </Link>
-            <a href="mailto:manuel@arete.business" className="btn-secondary">
-              manuel@arete.business
+            <a href="mailto:manuel@lincesistemas.com" className="btn-secondary">
+              manuel@lincesistemas.com
             </a>
           </div>
         </Reveal>

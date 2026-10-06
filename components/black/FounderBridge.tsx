@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Reveal } from "../Reveal";
 
 /**
- * FounderBridge — the credibility cross-sell back to Areté Soluciones.
- * Communicates that Areté Black is not a startup, it is the sixth vertical
+ * FounderBridge — the credibility cross-sell back to LINCE Sistemas.
+ * Communicates that LINCE Black is not a startup, it is the sixth vertical
  * of an operating firm with cases in production.
  */
 export function FounderBridge() {
@@ -29,7 +29,7 @@ export function FounderBridge() {
             <div className="prose-editorial">
               <Reveal delay={0.1}>
                 <p>
-                  Areté Black opera bajo Areté Soluciones, práctica
+                  LINCE Black opera bajo LINCE Sistemas, práctica
                   mexicana de software con seis sistemas en producción y cinco
                   industrias atendidas: notarías, hospitales, restaurantes,
                   comunidades y servicios profesionales.
@@ -59,7 +59,7 @@ export function FounderBridge() {
                   href="/"
                   className="link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium text-gold"
                 >
-                  Conocer el grupo Areté →
+                  Conocer el grupo LINCE →
                 </Link>
                 <Link
                   href="/casos"

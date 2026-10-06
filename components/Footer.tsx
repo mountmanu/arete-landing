@@ -27,12 +27,12 @@ const sitemap = [
   {
     title: "Contacto",
     items: [
-      { href: "mailto:manuel@arete.business", label: "manuel@arete.business" },
+      { href: "mailto:manuel@lincesistemas.com", label: "manuel@lincesistemas.com" },
       { href: "/contacto", label: "Agendar 30 min" },
     ],
   },
   {
-    title: "Areté",
+    title: "LINCE",
     items: [
       { href: "/nosotros", label: "Cómo trabajo" },
       { href: "https://www.linkedin.com/in/manuel-flores-90653060/", label: "LinkedIn" },
@@ -47,8 +47,8 @@ export function Footer() {
       <div className="container-editorial py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
           <div className="md:col-span-5">
-            <Link href="/" aria-label="Areté — Inicio" className="inline-block">
-              <LogoFull tone="light" className="h-10 w-auto" />
+            <Link href="/" aria-label="LINCE — Inicio" className="inline-block">
+              <LogoFull tone="light" className="h-12 w-auto" />
             </Link>
             <p className="mt-8 max-w-md text-paper/70 leading-relaxed">
               Software AI-nativo construido sobre un núcleo reusable y
@@ -56,7 +56,7 @@ export function Footer() {
               anterior.
             </p>
             <p className="mt-8 text-paper/55 text-sm">
-              Areté Soluciones
+              LINCE Sistemas
               <br />
               Operación remota desde México
             </p>
@@ -87,7 +87,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-paper/55">
           <p>
-            &copy; {year} Areté Soluciones — Todos los derechos
+            &copy; {year} LINCE Sistemas — Todos los derechos
             reservados.
           </p>
           <p>Construido con cuidado en México.</p>

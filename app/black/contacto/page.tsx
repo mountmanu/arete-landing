@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Solicitar acceso",
   description:
-    "Areté Black opera por solicitud. Cuéntenos sobre su casa: si califica para una conversación, le confirmamos en menos de 48 horas.",
+    "LINCE Black opera por solicitud. Cuéntenos sobre su casa: si califica para una conversación, le confirmamos en menos de 48 horas.",
 };
 
 export default function ContactoBlackPage() {
@@ -54,7 +54,7 @@ export default function ContactoBlackPage() {
                     Manuel Flores
                   </p>
                   <p className="mt-2 text-mute">
-                    Fundador · Areté Soluciones
+                    Fundador · LINCE Sistemas
                   </p>
                 </div>
               </Reveal>
@@ -63,10 +63,10 @@ export default function ContactoBlackPage() {
                 <div>
                   <p className="eyebrow text-gold mb-4">Correo directo</p>
                   <a
-                    href="mailto:manuel@arete.business"
+                    href="mailto:manuel@lincesistemas.com"
                     className="font-display text-3xl link-underline text-ink hover:text-gold transition-colors"
                   >
-                    manuel@arete.business
+                    manuel@lincesistemas.com
                   </a>
                 </div>
               </Reveal>

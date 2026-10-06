@@ -34,7 +34,7 @@ export function BovedaShowcase() {
             </Reveal>
             <Reveal delay={0.15}>
               <p className="mt-8 text-[var(--text-body)] leading-relaxed text-ink/85">
-                Sus clientes top no descargan una app de Areté. Descargan
+                Sus clientes top no descargan una app de LINCE. Descargan
                 <em className="text-gold not-italic"> «Berger · Mi Bóveda» </em>
                 — o el nombre de su casa — y reciben en ella el certificado
                 digital, la inscripción láser, la tasación anual y el derecho

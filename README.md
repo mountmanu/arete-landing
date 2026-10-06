@@ -1,11 +1,11 @@
-# Areté — Landing Page
+# LINCE Sistemas — Sitio web
 
-Sitio institucional de **Areté Soluciones**, consultoría mexicana de software AI-nativo. Núcleo reusable + packs por industria.
+Sitio institucional de **LINCE Sistemas**, consultoría mexicana de software AI-nativo. Núcleo reusable + packs por industria.
 
 Aloja dos experiencias bajo un mismo dominio:
 
-- **`arete.business`** — sitio principal: 5 packs verticales (notarial, hospital, restaurantes, comunidades, servicios profesionales), 7 casos en producción, fundador, contacto.
-- **`arete.business/black`** — sub-experiencia luxury **Areté Black**: Suite de Cumplimiento PLD para casas de joyería, relojería, metales y piedras preciosas en México y Colombia. Paleta onyx/bone/gold, navegación dedicada (NavBlack/FooterBlack), formulario de "Solicitar acceso".
+- **`lincesistemas.com`** — sitio principal: 5 packs verticales (notarial, hospital, restaurantes, comunidades, servicios profesionales), 7 casos en producción, fundador, contacto.
+- **`lincesistemas.com/black`** — sub-experiencia luxury **LINCE Black**: Suite de Cumplimiento PLD para casas de joyería, relojería, metales y piedras preciosas en México y Colombia. Paleta onyx/bone/gold, navegación dedicada (NavBlack/FooterBlack), formulario de "Solicitar acceso".
 
 El switch entre experiencias lo maneja `components/SiteChrome.tsx` vía `usePathname`. El tema luxury se aplica con `data-theme="black"` sobre un wrapper interior; todos los tokens CSS (`--color-ink`, `--color-paper`, `--color-gold`, etc.) se sobrescriben dentro de ese scope en `globals.css`.
 
@@ -31,14 +31,14 @@ npm run lint
 
 ```
 app/
-  ├─ page.tsx                  Home Areté
+  ├─ page.tsx                  Home LINCE Sistemas
   ├─ nosotros/page.tsx         Cómo trabajo
   ├─ verticales/page.tsx       Industrias
   ├─ casos/page.tsx            Grid de los 7 casos
   ├─ casos/[slug]/page.tsx     Caso individual (statically generated)
   ├─ contacto/page.tsx
   ├─ black/
-  │   ├─ page.tsx              Landing Areté Black
+  │   ├─ page.tsx              Landing LINCE Black
   │   ├─ cumplimiento/page.tsx Suite de Cumplimiento PLD (6 obligaciones del Art. 18)
   │   ├─ boveda/page.tsx       Módulo Bóveda white-label
   │   ├─ casos/page.tsx        Caso ancla 2026–2027
@@ -50,11 +50,11 @@ app/
 components/
   ├─ Logo.tsx                  LogoFull · LogoWordmark · LogoMark
   ├─ Nav.tsx · Footer.tsx
-  ├─ SiteChrome.tsx            Router de Nav/Footer entre Areté y Areté Black
+  ├─ SiteChrome.tsx            Router de Nav/Footer entre LINCE y LINCE Black
   ├─ Hero · Founder · Principios · Architecture · VerticalsGrid · CasesPreview · ContactCTA
   ├─ CaseStudyCard · CasesGrid · ContactForm · Engagement · ReadingProgress
   ├─ JsonLd · Reveal · ClientsStrip
-  └─ black/                    Componentes específicos de Areté Black
+  └─ black/                    Componentes específicos de LINCE Black
       ├─ LogoBlack.tsx
       ├─ NavBlack.tsx · FooterBlack.tsx
       ├─ HeroBlack · StakesBlack · PackBlack · BovedaShowcase
@@ -66,28 +66,29 @@ lib/
   └─ verticals.ts              Fuente única de las 5 industrias
 
 public/
-  ├─ favicon.svg
-  └─ images/manuel.jpg         Foto del fundador
+  ├─ brand/lince-negro.png     Logo para fondo claro
+  ├─ brand/lince-blanco.png    Logo para fondo oscuro
+  ├─ favicon.png · apple-touch-icon.png · icon-512.png
 ```
 
 ## Marca
 
-### Areté (principal)
-- **Nombre comercial**: Areté Soluciones
-- **Logo**: wordmark en EB Garamond + apex mark
+### LINCE (principal)
+- **Nombre comercial**: LINCE Sistemas
+- **Logo**: cabeza de lince en grabado + wordmark LINCE en EB Garamond. El lince sale de una foto CC0 (Wilfredor, Wikimedia Commons)
 - **Paleta**: Ink `#0A0A0A` · Paper `#FAFAFA` · Soft `#F5F5F5` · Mute `#525252` · Line `#E5E5E5`
 - **Tipografía**: EB Garamond (display) · Inter (body)
 - **Audiencia**: PyMEs mexicanas, decisores operativos (notarios, COOs hospitalarios, directores regionales de cadena)
 
-### Areté Black (sub-experiencia luxury)
+### LINCE Black (sub-experiencia luxury)
 - **Producto**: Suite de Cumplimiento PLD + módulo Bóveda
-- **Logo**: wordmark Areté en bone + sub-label "BLACK" en oro mate tracked uppercase
+- **Logo**: lince y wordmark LINCE en bone + sub-label "BLACK" en oro mate tracked uppercase
 - **Paleta**: Onyx `#0A0908` · Bone `#F5F1E8` · Gold `#C9A961` · Gold-deep `#8E7541`
 - **Tipografía**: misma familia, mismo peso — la diferenciación está en paleta y tono editorial
 - **Audiencia**: oficiales de cumplimiento, CFOs y directores generales de casas de joyería, relojería y comercializadores de metales preciosos en MX y CO
 - **Activación**: `[data-theme="black"]` aplicado por `SiteChrome` cuando `pathname.startsWith("/black")`
 
-## Casos en producción (Areté)
+## Casos en producción (LINCE)
 
 1. Notaría Pública 45 / 273 · Notarial
 2. Hospital privado Bajío · Hospital
@@ -97,7 +98,7 @@ public/
 6. Job Tracker BI · Servicios profesionales
 7. Laura Zanuna · Servicios profesionales
 
-## Caso ancla (Areté Black)
+## Caso ancla (LINCE Black)
 
 Sin firmar al cierre Q2 2026. Búsqueda activa entre joyerías de lujo con presencia multi-sucursal en CDMX, Monterrey, Guadalajara, Bogotá y Medellín. Las cuentas que califiquen como design partner reciben condiciones especiales: precio Y1 reducido, exclusividad por sub-segmento, derechos editoriales sobre el caso de estudio.
 
@@ -112,4 +113,4 @@ Despliegue recomendado: Vercel (auto-deploy desde main).
 
 ---
 
-© Areté Soluciones
+© LINCE Sistemas

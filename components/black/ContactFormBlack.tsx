@@ -57,7 +57,7 @@ export function ContactFormBlack() {
   const onSubmit = async (data: FormData) => {
     await new Promise((r) => setTimeout(r, 600));
     if (typeof window !== "undefined") {
-      const subject = `Areté Black · Solicitud de acceso · ${data.firm}`;
+      const subject = `LINCE Black · Solicitud de acceso · ${data.firm}`;
       const body = [
         `Nombre: ${data.name}`,
         `Cargo: ${data.role}`,
@@ -69,7 +69,7 @@ export function ContactFormBlack() {
         "",
         data.message,
       ].join("\n");
-      window.location.href = `mailto:manuel@arete.business?subject=${encodeURIComponent(
+      window.location.href = `mailto:manuel@lincesistemas.com?subject=${encodeURIComponent(
         subject,
       )}&body=${encodeURIComponent(body)}`;
     }
@@ -90,10 +90,10 @@ export function ContactFormBlack() {
         <p className="mt-6 text-mute max-w-md mx-auto leading-relaxed">
           Si necesita contactar directamente, escriba a{" "}
           <a
-            href="mailto:manuel@arete.business"
+            href="mailto:manuel@lincesistemas.com"
             className="link-underline text-gold font-medium"
           >
-            manuel@arete.business
+            manuel@lincesistemas.com
           </a>
           .
         </p>

@@ -8,7 +8,7 @@ export function HeroBlack() {
         <Reveal>
           <div className="flex items-center gap-3 mb-10">
             <span className="accent-rule" />
-            <span className="eyebrow text-gold">Areté · Black</span>
+            <span className="eyebrow text-gold">LINCE · Black</span>
           </div>
         </Reveal>
 
@@ -31,8 +31,8 @@ export function HeroBlack() {
         <Reveal delay={0.2}>
           <p className="mt-10 max-w-2xl text-[var(--text-body-lg)] text-pretty leading-relaxed text-ink/85">
             Suite de Cumplimiento PLD para casas de joyería, relojería, metales
-            y piedras preciosas. Construida sobre la madurez acumulada de Areté
-            Soluciones — la misma plataforma que opera para notarios,
+            y piedras preciosas. Construida sobre la madurez acumulada de LINCE
+            Sistemas — la misma plataforma que opera para notarios,
             hospitales y cadenas con rigor regulatorio diario.
           </p>
         </Reveal>

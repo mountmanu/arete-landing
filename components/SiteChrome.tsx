@@ -14,7 +14,7 @@ import { FooterBlack } from "./black/FooterBlack";
  *    cascade into every descendant. The wrapper also paints the onyx
  *    background, since `body` is server-rendered and cannot change palette
  *    per route.
- *  - Everything else renders the canonical Areté chrome inline so the body's
+ *  - Everything else renders the canonical LINCE chrome inline so the body's
  *    own flex layout stays in charge.
  *
  * Keeping a single client wrapper avoids parallel routes complexity and lets

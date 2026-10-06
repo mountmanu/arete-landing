@@ -6,7 +6,7 @@ import { Engagement } from "@/components/Engagement";
 export const metadata: Metadata = {
   title: "Cómo trabajo",
   description:
-    "Soy Manuel Flores, fundador de Areté Soluciones. Construyo software AI-nativo para PyMEs mexicanas — un núcleo reusable y packs por industria.",
+    "Soy Manuel Flores, fundador de LINCE Sistemas. Construyo software AI-nativo para PyMEs mexicanas — un núcleo reusable y packs por industria.",
 };
 
 const methodology = [
@@ -63,7 +63,7 @@ export default function NosotrosPage() {
                 <Reveal>
                   <p>
                     <strong className="font-medium">
-                      Areté Soluciones
+                      LINCE Sistemas
                     </strong>{" "}
                     es una firma mexicana de software AI-nativo. Operamos sobre
                     una idea simple: la consultoría tradicional vende horas y

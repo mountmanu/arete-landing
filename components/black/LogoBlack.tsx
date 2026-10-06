@@ -1,44 +1,53 @@
 /**
- * Areté Black logo — the canonical wordmark in bone with a discreet gold
- * accent rule + a subordinate "Black" label set in tracked uppercase Inter.
+ * LINCE Black logo — the lynx and the wordmark in bone, with a discreet gold
+ * rule + a subordinate "Black" label set in tracked uppercase Inter.
  * Use this only inside the /black sub-experience.
  */
 export function LogoBlack({ className = "" }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 360 96"
+      viewBox="0 0 372 96"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       fill="none"
       role="img"
-      aria-label="Areté Black"
+      aria-label="LINCE Black"
     >
-      <path
-        d="M14 74 L36 26 L58 74"
-        stroke="#C9A961"
-        strokeWidth="1.75"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+      <image
+        href="/brand/lince-blanco.png"
+        x="0"
+        y="0"
+        width="72"
+        height="96"
+        preserveAspectRatio="xMidYMid meet"
       />
       <text
-        x="80"
-        y="68"
-        fontFamily="'EB Garamond', ui-serif, Georgia, serif"
-        fontSize="56"
+        x="88"
+        y="67"
+        style={{
+          fontFamily:
+            "var(--font-display-stack), 'EB Garamond', ui-serif, Georgia, serif",
+        }}
+        fontSize="52"
         fontWeight="400"
-        letterSpacing="0.03em"
+        textLength="176"
+        lengthAdjust="spacing"
         fill="#F5F1E8"
       >
-        Areté
+        LINCE
       </text>
-      <line x1="244" y1="56" x2="262" y2="56" stroke="#C9A961" strokeWidth="1" />
+      <line x1="280" y1="56" x2="298" y2="56" stroke="#C9A961" strokeWidth="1" />
       <text
-        x="270"
+        x="306"
         y="62"
-        fontFamily="'Inter', ui-sans-serif, system-ui, sans-serif"
+        style={{
+          fontFamily:
+            "var(--font-body-stack), 'Inter', ui-sans-serif, system-ui, sans-serif",
+        }}
         fontSize="14"
         fontWeight="500"
-        letterSpacing="0.32em"
+        textLength="62"
+        lengthAdjust="spacing"
         fill="#C9A961"
       >
         BLACK

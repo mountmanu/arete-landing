@@ -44,7 +44,7 @@ export const caseStudies: CaseStudy[] = [
       "El cuello de botella no era jurídico — era operativo. La materia legal estaba dominada; lo que faltaba era un sistema que acompañara al equipo paso por paso, con la legislación local cargada y los antecedentes del cliente disponibles en contexto.",
     ],
     solution: [
-      "Sobre el núcleo Areté armamos el pack notarial: RAG con la legislación estatal y los protocolos del despacho, agentes redactores que generan minutas a partir de los hechos del cliente, MCP que conecta con el sistema de gestión interna para traer antecedentes en cuestión de segundos.",
+      "Sobre el núcleo LINCE armamos el pack notarial: RAG con la legislación estatal y los protocolos del despacho, agentes redactores que generan minutas a partir de los hechos del cliente, MCP que conecta con el sistema de gestión interna para traer antecedentes en cuestión de segundos.",
       "El equipo trabaja sobre un editor donde cada cláusula está trazable a su fuente legal y a la decisión del notario. Cada escritura final se cierra con una bitácora cronológica firmada — auditable, inmutable, exportable.",
     ],
     reuse: [
@@ -203,7 +203,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     solution: [
       "Empacamos un asistente personal de IA conectado a su agenda, su correo y sus notas, junto con el job tracker liviano y un sistema editorial para contenido. El asistente prepara reuniones, redacta seguimientos, y deja a Laura enfocada en la conversación con el cliente.",
-      "Es el caso límite de la promesa Areté: el mismo núcleo que opera notarías y hospitales, ajustado para una sola persona.",
+      "Es el caso límite de la promesa LINCE: el mismo núcleo que opera notarías y hospitales, ajustado para una sola persona.",
     ],
     reuse: [
       "Asistente personal del Job Tracker BI",
