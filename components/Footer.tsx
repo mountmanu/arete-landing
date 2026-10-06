@@ -48,8 +48,8 @@ export function Footer() {
   return (
     <footer className="bg-ink text-paper">
       <div className="container-editorial py-14">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
-          <div className="md:col-span-5">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8">
+          <div className="lg:col-span-5">
             <Link href="/" aria-label="LINCE — Inicio" className="inline-block">
               <LogoFull tone="light" className="h-16 w-auto" />
             </Link>
@@ -73,16 +73,22 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="md:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
+          {/* Contacto toma el ancho de su contenido para que el correo nunca se parta. */}
+          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-[1fr_1fr_auto] gap-8">
             {sitemap.map((column) => (
-              <div key={column.title}>
+              <div
+                key={column.title}
+                className={column.title === "Contacto" ? "col-span-2 sm:col-span-1" : ""}
+              >
                 <h3 className="eyebrow text-paper/60 mb-5">{column.title}</h3>
                 <ul className="space-y-3">
                   {column.items.map((item) => (
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-paper/85 hover:text-paper transition-colors text-[15px] [overflow-wrap:anywhere]"
+                        className={`text-paper/85 hover:text-paper transition-colors text-[15px] ${
+                          item.href.startsWith("mailto:") ? "whitespace-nowrap" : ""
+                        }`}
                       >
                         {item.label}
                       </Link>
