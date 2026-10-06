@@ -4,7 +4,7 @@ export type VerticalSlug =
   | "notarial"
   | "hospital"
   | "restaurant"
-  | "community"
+  | "parking"
   | "professional";
 
 export interface Vertical {
@@ -67,20 +67,20 @@ export const verticals: Vertical[] = [
     caseSlug: "dona-tota-bi",
   },
   {
-    slug: "community",
-    name: "Comunidades",
-    promise: "Que el comité administre con información y no con el chat.",
+    slug: "parking",
+    name: "Estacionamientos y autolavados",
+    promise: "Que cada peso que entra quede registrado, a cualquier hora y con quien sea que esté en la cabina.",
     description:
-      "Un fraccionamiento se administra entre un grupo de WhatsApp, una contadora y la memoria del administrador. Les doy una sola plataforma: cuotas, morosidad, reservas de áreas comunes, incidencias de seguridad y mantenimiento, y cada quien ve lo que le toca.",
+      "Un estacionamiento o un autolavado vive de muchos cobros chicos, todo el día, con gente que rota. Ahí el dinero se pierde en los huecos: el ticket de papel, el tiempo calculado de cabeza, el corte que no cuadra. Armo la cabina de cobro, los tiempos, las bahías y el corte de turno en un solo sistema, con la impresora, el cajón y la terminal de tarjeta conectados.",
     packIncludes: [
-      "Cuotas cobradas y pendientes, cuadradas con sus facturas",
-      "Morosidad clara, por vecino y por antigüedad",
-      "Reservas de áreas comunes con calendario",
-      "Bitácora de seguridad e incidencias por turno",
-      "Mantenimiento programado",
+      "Cabina de cobro con tarifa por tiempo y tolerancia",
+      "Tickets con reloj y recibo impreso",
+      "Tablero de bahías o estaciones de servicio",
+      "Corte de turno por efectivo, tarjeta y transferencia",
+      "Pensiones y membresías mensuales",
     ],
     anchorClients: ["park-wash"],
-    caseSlug: "comunidad-bi",
+    caseSlug: "park-wash",
   },
   {
     slug: "professional",
@@ -95,8 +95,8 @@ export const verticals: Vertical[] = [
       "Reportes limpios para entregar al cliente",
       "Un asistente que te prepara el día",
     ],
-    anchorClients: ["laura-zanuna", "job-tracker"],
-    caseSlug: "job-tracker-bi",
+    anchorClients: ["laura-zanuna"],
+    caseSlug: "laura-zanuna",
   },
 ];
 

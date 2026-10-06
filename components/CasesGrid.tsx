@@ -12,7 +12,7 @@ const filters: { value: Filter; label: string }[] = [
   { value: "notarial", label: "Notarial" },
   { value: "hospital", label: "Hospital" },
   { value: "restaurant", label: "Restaurantes" },
-  { value: "community", label: "Comunidades" },
+  { value: "parking", label: "Estacionamientos" },
   { value: "professional", label: "Profesional" },
 ];
 

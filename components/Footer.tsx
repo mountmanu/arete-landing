@@ -17,7 +17,7 @@ const sitemap = [
       { href: "/verticales#notarial", label: "Notarías" },
       { href: "/verticales#hospital", label: "Hospitales" },
       { href: "/verticales#restaurant", label: "Restaurantes" },
-      { href: "/verticales#community", label: "Comunidades" },
+      { href: "/verticales#parking", label: "Estacionamientos" },
       {
         href: "/verticales#professional",
         label: "Servicios profesionales",

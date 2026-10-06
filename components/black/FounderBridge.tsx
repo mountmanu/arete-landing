@@ -30,9 +30,9 @@ export function FounderBridge() {
               <Reveal delay={0.1}>
                 <p>
                   LINCE Black opera bajo LINCE Sistemas, práctica
-                  mexicana de software con seis sistemas en producción y cinco
+                  mexicana de software con cinco sistemas en producción y cinco
                   industrias atendidas: notarías, hospitales, restaurantes,
-                  comunidades y servicios profesionales.
+                  estacionamientos y servicios profesionales.
                 </p>
               </Reveal>
               <Reveal delay={0.15}>
@@ -65,7 +65,7 @@ export function FounderBridge() {
                   href="/casos"
                   className="link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium text-ink/70"
                 >
-                  Ver los seis casos en producción →
+                  Ver los cinco casos en producción →
                 </Link>
               </div>
             </Reveal>

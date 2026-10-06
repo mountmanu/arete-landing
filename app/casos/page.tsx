@@ -6,7 +6,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Casos",
   description:
-    "Seis negocios que ya operan con sistemas míos: notarías, un hospital, una cadena de comida, un fraccionamiento y consultoras.",
+    "Cinco negocios que ya operan con sistemas míos: dos notarías, un hospital, una cadena de comida, un estacionamiento con autolavado y una consultora.",
 };
 
 export default function CasosPage() {
@@ -22,7 +22,7 @@ export default function CasosPage() {
               className="text-balance max-w-4xl"
               style={{ fontSize: "var(--text-display-2xl)" }}
             >
-              Seis negocios, seis sistemas.
+              Cinco negocios, cinco sistemas.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>

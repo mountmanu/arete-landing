@@ -10,8 +10,7 @@ export type ClientId =
   | "hospital-la-salle"
   | "dona-tota"
   | "park-wash"
-  | "laura-zanuna"
-  | "job-tracker";
+  | "laura-zanuna";
 
 export interface ClientLogoAsset {
   src: string;
@@ -57,10 +56,6 @@ export const clients: Record<ClientId, Client> = {
     id: "laura-zanuna",
     name: "Laura Zanuna",
     logo: { src: "/clientes/laura-zanuna.png", width: 1565, height: 320, scale: 0.95 },
-  },
-  "job-tracker": {
-    id: "job-tracker",
-    name: "Job Tracker BI",
   },
 };
 

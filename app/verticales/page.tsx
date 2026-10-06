@@ -8,7 +8,7 @@ import { ClientLogos } from "@/components/ClientLogo";
 export const metadata: Metadata = {
   title: "Industrias",
   description:
-    "Notarías, hospitales, restaurantes, comunidades y servicios profesionales: lo que ya construí en cada giro y lo que puedes esperar.",
+    "Notarías, hospitales, restaurantes, estacionamientos y servicios profesionales: lo que ya construí en cada giro y lo que puedes esperar.",
 };
 
 export default function VerticalesPage() {

@@ -65,7 +65,7 @@ export default function NosotrosPage() {
                     Soy <strong className="font-medium">Manuel Flores</strong>.
                     Llevo años haciendo sistemas para negocios que no son
                     corporativos: notarías, un hospital, una cadena de comida,
-                    un fraccionamiento, consultoras. Negocios donde el dueño
+                    un estacionamiento con autolavado, una consultora. Negocios donde el dueño
                     conoce su operación de memoria y necesita que la
                     herramienta se ajuste a esa operación, y no al revés.
                   </p>

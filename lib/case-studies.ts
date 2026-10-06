@@ -61,7 +61,7 @@ export const caseStudies: CaseStudy[] = [
     reuse: [
       "Accesos por puesto: notario, abogado, capturista",
       "La redacción asistida, lista para otros despachos",
-      "El historial auditable, que después usé en el hospital y en el fraccionamiento",
+      "El historial auditable, que después usé en el hospital",
     ],
     impact: [
       { metric: "De días a horas", detail: "en sacar una escritura" },
@@ -98,7 +98,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     reuse: [
       "Los tableros de dirección, que después armé para la cadena de comida",
-      "El cuadre de pagos, reutilizado en el fraccionamiento",
+      "El cuadre de pagos, listo para cualquier negocio que cobra por convenio",
       "Los avisos de cobranza",
     ],
     impact: [
@@ -153,77 +153,41 @@ export const caseStudies: CaseStudy[] = [
     order: 3,
   },
   {
-    slug: "comunidad-bi",
+    slug: "park-wash",
     client: "Park & Wash Victoria",
     clients: ["park-wash"],
-    vertical: "community",
-    verticalLabel: "Comunidades",
-    title: "El fraccionamiento que se administra como empresa.",
+    vertical: "parking",
+    verticalLabel: "Estacionamientos",
+    title: "El estacionamiento donde cada peso queda registrado, a cualquier hora.",
     tagline:
-      "Cuotas, morosidad, áreas comunes y seguridad en un solo lugar, para un comité que decidía viendo la mitad.",
-    year: "2024",
-    scope: "Cuotas · Morosidad · Reservas · Bitácora de seguridad · Panel del comité",
+      "Entrada, lavado, cobro y corte de turno en una sola pantalla de cabina, para un negocio que trabaja las 24 horas con gente que rota.",
+    year: "2026",
+    scope: "Cabina de cobro · Tickets y tiempos · Bahías de lavado · Corte de turno · Pensiones",
     problem: [
-      "El fraccionamiento funcionaba con un administrador, una contadora y un grupo de WhatsApp donde caían reportes de seguridad, mantenimiento y reservas. La morosidad subía, la información vivía en pedazos y el comité decidía con medio panorama.",
-      "No necesitaban más gente. Necesitaban una herramienta que les permitiera administrar como empresa con los recursos de una comunidad.",
+      "Park & Wash es un estacionamiento con autolavado en el centro de Ciudad Victoria, abierto las 24 horas: tres turnos, veinte cajones, cuatro bahías y un flujo constante de autos que entran, se lavan y salen. Sin sistema, el ticket era un papel, el tiempo se calculaba de cabeza y el corte de turno dependía de que la memoria del empleado cuadrara con el dinero del cajón.",
+      "El dueño necesitaba una cosa antes que nada: que cada peso que entra quede registrado, sin importar quién esté en la cabina ni a qué hora.",
     ],
     solution: [
-      "Les armé una plataforma única: cuotas cuadradas con sus facturas, morosidad por vecino y por antigüedad, reservas de áreas comunes con calendario, bitácora de seguridad firmada por turno y un panel para el comité donde cada quien ve lo que le toca.",
-      "El comité dejó de apagar fuegos. La morosidad bajó porque la cobranza se volvió predecible.",
+      "Construí la cabina de cobro: el empleado entra con su clave, registra la placa, elige si el auto lleva lavado y el sistema arranca el reloj. El cobro lo calcula el sistema, no el empleado, con las tarifas y la tolerancia que fijó el dueño. Al salir, recibo impreso y cajón abierto desde la misma pantalla.",
+      "Las bahías de lavado tienen su propio tablero: qué auto está en cuál, cuánto lleva y qué servicio se le hace. El corte de turno sale solo, con el desglose por efectivo, tarjeta y transferencia. La terminal de cobro con tarjeta se está integrando para que el monto llegue sin teclearlo.",
     ],
     reuse: [
-      "Accesos por papel: administrador, comité, vecino",
-      "El cuadre de cuotas, heredado del hospital",
-      "La bitácora, heredada de la notaría",
+      "La cabina de cobro con tarifa por tiempo, lista para otro estacionamiento",
+      "El corte de turno por método de pago",
+      "La conexión con impresora, cajón y lector de código",
     ],
     impact: [
-      { metric: "Menos morosidad", detail: "en seis meses" },
-      { metric: "Todo registrado", detail: "cada incidencia de seguridad" },
-      { metric: "Una plataforma", detail: "en lugar de cuatro herramientas y un chat" },
+      { metric: "Cada peso registrado", detail: "sin depender de quién esté en la cabina" },
+      { metric: "Corte en minutos", detail: "con desglose por método de pago" },
+      { metric: "Las 24 horas", detail: "tres turnos sobre el mismo sistema" },
     ],
     stack: [
       "Aplicación web",
-      "Facturación electrónica",
-      "Accesos por papel",
-      "Bitácora",
+      "Base de datos central",
+      "Impresora, cajón y lector de código",
+      "Terminal de cobro con tarjeta",
     ],
     order: 4,
-  },
-  {
-    slug: "job-tracker-bi",
-    client: "Job Tracker BI",
-    clients: ["job-tracker"],
-    vertical: "professional",
-    verticalLabel: "Servicios profesionales",
-    title: "Cobrar el tiempo sin perder tiempo registrándolo.",
-    tagline:
-      "Para firmas que cobran por hora: registro casi automático, margen claro por proyecto y un aviso antes de que uno se vuelva pérdida.",
-    year: "2024",
-    scope: "Registro de tiempo · Margen por proyecto · Prospectos · Asistente",
-    problem: [
-      "Las firmas que cobran por hora viven una contradicción: el tiempo es su producto, y registrarlo es lo que más se posterga. Las hojas se llenan los viernes de memoria, el margen real se conoce tarde y los prospectos viven aparte de los proyectos.",
-      "El resultado: proyectos que pierden dinero mientras todos creen que van bien.",
-    ],
-    solution: [
-      "Construí un registro de tiempo que casi se llena solo: el sistema sugiere las entradas a partir del calendario y el correo. Prospectos, proyectos y facturación quedaron en un mismo plano, con el margen real por proyecto y por persona, y un aviso cuando alguno entra en zona de riesgo.",
-      "El equipo recupera horas cada semana y la dirección ve los problemas antes de que cuesten.",
-    ],
-    reuse: [
-      "Accesos por firma y por persona",
-      "El asistente de productividad, que después armé para Laura Zanuna",
-      "El seguimiento de prospectos",
-    ],
-    impact: [
-      { metric: "Margen a la vista", detail: "en cada proyecto activo" },
-      { metric: "Horas de vuelta", detail: "cada semana por consultor" },
-      { metric: "Al día", detail: "prospectos y proyectos juntos" },
-    ],
-    stack: [
-      "Aplicación web",
-      "Conexión con calendario y correo",
-      "Asistente con inteligencia artificial",
-    ],
-    order: 5,
   },
   {
     slug: "laura-zanuna",
@@ -259,7 +223,7 @@ export const caseStudies: CaseStudy[] = [
       "Conexión con agenda y correo",
       "Aplicación web",
     ],
-    order: 6,
+    order: 5,
   },
 ];
 

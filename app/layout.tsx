@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s · LINCE Sistemas",
   },
   description:
-    "Soy Manuel Flores. Hago sistemas a la medida para negocios en México: notarías, hospitales, restaurantes, comunidades y despachos. Los construyo, los entrego funcionando y me quedo.",
+    "Soy Manuel Flores. Hago sistemas a la medida para negocios en México: notarías, hospitales, restaurantes, estacionamientos y despachos. Los construyo, los entrego funcionando y me quedo.",
   keywords: [
     "LINCE",
     "LINCE Sistemas",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "sistema para notaría",
     "sistema para hospital",
     "tablero para restaurantes",
-    "administración de condominios",
+    "sistema para estacionamiento y autolavado",
     "desarrollo de software a la medida México",
   ],
   authors: [{ name: "LINCE Sistemas" }],

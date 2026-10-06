@@ -4,7 +4,7 @@ Sitio institucional de **LINCE Sistemas**, consultoría mexicana de software AI-
 
 Aloja dos experiencias bajo un mismo dominio:
 
-- **`lincesistemas.com`** — sitio principal: 5 packs verticales (notarial, hospital, restaurantes, comunidades, servicios profesionales), 7 casos en producción, fundador, contacto.
+- **`lincesistemas.com`** — sitio principal: 5 giros (notarías, hospitales, restaurantes, estacionamientos y autolavados, servicios profesionales), 5 casos en producción, cómo trabajo, contacto, demos.
 - **`lincesistemas.com/black`** — sub-experiencia luxury **LINCE Black**: Suite de Cumplimiento PLD para casas de joyería, relojería, metales y piedras preciosas en México y Colombia. Paleta onyx/bone/gold, navegación dedicada (NavBlack/FooterBlack), formulario de "Solicitar acceso".
 
 El switch entre experiencias lo maneja `components/SiteChrome.tsx` vía `usePathname`. El tema luxury se aplica con `data-theme="black"` sobre un wrapper interior; todos los tokens CSS (`--color-ink`, `--color-paper`, `--color-gold`, etc.) se sobrescriben dentro de ese scope en `globals.css`.
@@ -91,12 +91,10 @@ public/
 ## Casos en producción (LINCE)
 
 1. Notaría Pública 45 / 273 · Notarial
-2. Hospital privado Bajío · Hospital
+2. Hospital Victoria La Salle · Hospital
 3. Doña Tota · Restaurantes
-4. Comunidad residencial · Comunidades
-5. Bento · Restaurantes
-6. Job Tracker BI · Servicios profesionales
-7. Laura Zanuna · Servicios profesionales
+4. Park & Wash Victoria · Estacionamientos y autolavados
+5. Laura Zanuna · Servicios profesionales
 
 ## Caso ancla (LINCE Black)
 

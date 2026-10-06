@@ -13,7 +13,7 @@ const schema = z.object({
     "notarial",
     "hospital",
     "restaurant",
-    "community",
+    "parking",
     "professional",
     "other",
   ]),
@@ -26,7 +26,7 @@ const verticalOptions: { value: FormData["vertical"]; label: string }[] = [
   { value: "notarial", label: "Notarías" },
   { value: "hospital", label: "Hospitales" },
   { value: "restaurant", label: "Restaurantes" },
-  { value: "community", label: "Comunidades" },
+  { value: "parking", label: "Estacionamientos y autolavados" },
   { value: "professional", label: "Servicios profesionales" },
   { value: "other", label: "Otro / aún no lo sé" },
 ];

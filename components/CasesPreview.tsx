@@ -26,7 +26,7 @@ export function CasesPreview() {
               href="/casos"
               className="link-underline text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium"
             >
-              Ver los seis casos →
+              Ver los cinco casos →
             </Link>
           </Reveal>
         </div>
