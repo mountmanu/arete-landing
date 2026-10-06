@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { LogoFull } from "./Logo";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { useLang } from "@/contexts/LangContext";
@@ -22,6 +23,9 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const { lang, toggleLang } = useLang();
+  const pathname = usePathname();
+  const isCurrent = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -48,7 +52,8 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium link-underline"
+              aria-current={isCurrent(link.href) ? "page" : undefined}
+              className="nav-link text-[var(--text-caption)] tracking-[0.04em] uppercase font-medium text-ink/70 hover:text-ink aria-[current=page]:text-ink transition-colors duration-300"
             >
               {lang === "en" ? link.en : link.es}
             </Link>
